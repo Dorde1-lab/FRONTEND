@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<h1> Exercise </h1>
+<table border="1" style="width: 40%;">
+
+
+<thead bgcolor="lightgrey" style="text-align: left;">
+    <tr>
+        <th>Testform</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>
+
+    <form action="https://www.youtube.com/" method="post">
+<!-- Text -->
+        <label for="name"> Name </label> 
+        <input type="text" name="name" id="name" ><br><br>
+<!-- Password -->
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password">
+<!-- Radio -->
+<p>Gender</p>
+        <input type="radio" name="male" id="male" value="male">
+        <label for="male">Male</label>
+        <input type="radio" name="female" id="female" value="female" checked>
+        <label for="female">Female</label><br><br><br>
+<!-- Drop down / Select box -->
+        <label for="continent">Continent</label>
+        <select name="continent" id="continent">
+           <option value="Evropa">Evropa</option>
+           <option value="Azija" selected>Azija</option>
+           <option value="Afrika">Afrika</option>
+        </select><br><br>
+<!-- Check box -->
+        <p>Meals</p>
+        <input type="checkbox" id="bfast" name="meals" value="bfast">
+        <label for="bfast">Breakfast</label><br>
+        <input type="checkbox" id="lunch" name="meals" value="lunch" checked>
+        <label for="lunch">Lunch</label><br>
+        <input type="checkbox" id="dinner" name="meals" value="dinner">
+        <label for="dinner">Dinner</label><br><br>
+<!-- Text area -->
+        <label for="remark">Remark</label><br>
+        <textarea id="remark" name="remark" cols="30" rows="5" placeholder="Write a comment"></textarea>
+
+        </td>
+    </tr>
+
+</tbody>
+<!-- Submit / Reset -->
+
+<tfoot  style="text-align: right;">
+    <tr>
+        <td>
+            <input type="submit" value="Send">
+            <input type="reset" value="Cancel"> 
+
+        </td>
+    </tr>
+</tfoot>
+
+    </form>
+
+</table>
+
+</body>
+</html>
