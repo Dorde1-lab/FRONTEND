@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="..." method="post">
+        <fieldset>
+            <legend>Sign up form</legend><br>
+            <label for="name">First name:</label>
+            <input type="text" name="name" id="name"> <br><br>
+            <label for="sname">Second name</label>
+            <input type="text" name="sname" id="sname"><br><br>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email"><br><br>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password"><br><br>
+        <!-- Text area -->
+             <label for="comment">What did you like about this gig?</label>
+             <textarea id="comment" name="comment" cols="10" rows="5" placeholder="Enter your comments..."></textarea><br><br><br>
+             <label for="exp">Tell us your experience</label>
+             <textarea id="exp" name="exp" placeholder="Enter your comments..." cols="15" rows="7"></textarea>
+             <input type="submit" value="Sign up">
+             <input type="reset" value="Reset form">
+        </fieldset>
+</form><hr>
+
+<form action="..." method="post">
+        <h1>Radio buttons form</h1>
+        <p>Please select your favorite genre:</p>
+        <input type="radio" id="pop" name="pop" value="pop">
+        <label for="pop" >Pop</label>
+        <input type="radio" id="rock" name="rock" value="rock" checked>
+        <label for="rock" >Rock</label>
+        <input type="radio" id="jazz" name="jazz" value="jazz">
+        <label for="jazz">Jazz</label>
+        <img src="img/krstic.png" width="20"><hr>
+</form>
+        <p>Please select your favorite music service:</p>
+        <input type="checkbox" id="tunes" name="tunes" value="tunes">
+        <label for="tunes">iTunes</label>
+        <input type="checkbox" id="live" name="live" value="live">
+        <label for="live">iTunes</label>
+        <input type="checkbox" id="spotify" name="spotify" value="spotify">
+        <label for="spotify">iTunes</label><hr>
+
+<form action="..." method="post">
+        <label for="music">Please select what device do you listen to music on</label>
+        <select name="music" id="music">
+            <option disabled selected hidden value="">Please select what device do you listen to music on</option>
+            <option value="iPhone">iPhone</option>
+            <option value="iPod">iPod</option>
+        </select>
+</form>
+
+<form action="..." method="post">
+    <label for="music">Select the instruments you play on:</label>
+    <select name="ins" id="ins" size="3" multiple="multiple">
+        <option value="guitar">Guitar</option>
+        <option value="bass">Bass</option>
+        <option value="drums">Drums</option>
+        <option value="keyboard">Keyboard</option>
+    </select>
+</form>
+<hr>
+
+<form action="..." method="post">
+    <label for="song">Upload your song</label>
+    <input type="file" id="song" name="song">
+</form>
+    
+
+</body>
+</html>
