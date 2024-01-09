@@ -5,11 +5,116 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
 
+      h {display: block; text-align: center;
+         background-color: antiquewhite;
+         font-family: 'Courier New', Courier, monospace;
+         font-size: 40px;     
+    }
+    .div2 {width: 30%;}
+
+
+</style>
 
 <body>
-    
+  <!-- div1 -->
 
-    
+ <div class="div1">   
+<h> Book your trip </h>
+</div>
+
+<!-- div2 -->
+
+<div class="div2">
+
+
+    <form action="mysite.html" method="post">
+
+          <fieldset>
+                    <legend> Information</legend>
+                    <label for="name">Full name</label>
+                    <input type="text" id="name" name="name" placeholder="Full name"><br><br>
+                    <label for="pas">Password</label>
+                    <input type="password" name="pas" id="pas" required 
+                    placeholder="Enter a valid password" maxlength="10"><br><br>
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" id="email" required><br><br>
+                    <label for="date"> Current date </label>
+                    <input type="date" id="date" name="date"><br><br>
+
+                    <label for="passport">Upload your passeport</label>
+                    <input type="file" id="passeport" name="passeport">
+          </fieldset><br>
+
+            <!-- Trip -->
+          <fieldset>
+
+                    <legend>Plan your trip</legend><br>
+
+                    <fieldset>
+                    <legend>Property Type</legend>
+                    <input type="checkbox" id="apartment" name="apartment" value="apartment">
+                    <label for="apartment"> Apartments</label>
+                    <input type="checkbox" id="hotels" name="hotels" value="hotels" checked>
+                    <label for="hotels"> Hotels</label>
+                    <input type="checkbox" id="villas" name="villas" value="villas">
+                    <label for="villas"> Villas</label>
+                    </fieldset><br>
+
+            <!-- Select list -->
+
+                    <label for="Property"> Property rating</label>
+                    <select name="Property" id="Property">
+                        <option value="2stars" selected> 2 stars</option>
+                        <option value="3stars">3 stars</option>
+                        <option value="4stars">4 stars</option>
+                    </select><br><br>
+
+            <!-- Multiple select box -->
+
+            <label for="bed">Bed Preference</label>
+            <select name="bed" id="bed">
+                <option value="twin">Twin beds</option>
+                <option value="double" selected>Double bed</option>
+            </select><br><br>
+
+            <!-- Radio button -->
+            <fieldset>
+
+                <legend>Distance from center</legend><br>
+                       <input type="radio" id="1km" name="1km" checked>
+                       <label for="1km">Less than 1 km</label><br>
+                       <input type="radio" id="3km" name="3km">
+                       <label for="3km">Less than 3 km</label><br>
+                       <input type="radio" id="5km" name="5km">
+                       <label for="5km">Less than 5 km</label>
+
+            </fieldset> <br><br>
+
+            <!-- number range -->
+
+            <label for="age">Your age</label>
+            <input type="number" id="age" name="age" min="18" size="80" max="80" value="25"><br><br>
+
+            <label for="satisfaction"> Satisfaction </label>
+            <input type="range" id="satisfaction" name="satisfaction" min="1" max="5" value="4"><br><br>
+
+            <!-- submit reset -->
+
+            <fieldset>
+                <input type="reset" value="Reset">
+                <input type="submit" value="Confirm"
+                style="float: right; background-color: rgb(84, 84, 243); 
+                color: white;" >
+            
+            </fieldset>
+          </fieldset>  
+    </form>
+</div><br>
+
+<a href="mysite.html">Main page</a>
+
+
 </body>
 </html>

@@ -7,15 +7,120 @@
 </head>
 
 <style>
-    #div1 {background-color: antiquewhite; display: block;}
-h {text-align: center; font-size: 40px; display: block;}
+    * {font-family: 'Courier New', Courier, monospace;}
+
+    #div1 {background-color: antiquewhite; display: block; margin-left: 20%; 
+         margin-right: 20%;}
+
+    h {text-align: center; font-size: 40px; display: block;}
+    main {margin-left: 20%;
+        margin-right: 20%;
+        padding: 20px;
+         width: 60%;}
+
+/* Navigation */
+
+     ul {list-style-type: none;
+        margin: o;
+        padding: 0;
+        width: 20%;
+        overflow: auto;
+
+        background-color: rgb(223, 220, 220);
+        height: 100%;
+        position: fixed;}
+
+    li a {display: block;
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+        padding: 8px 16px;
+        text-align: left;
+        }
+
+
+    li a.firsta {background-color: rgb(65, 143, 35);
+                 color: white;}
+
+    li a:hover:not(.firsta) {background-color: #555;
+                color: white;}
+
+    aside {width: 30%;
+        float: right;}
+    img {width: 100%;}
+    .divframe {text-align: center;
+                width: 100%;
+                position: relative;}
+
+    iframe {width: 100%;
+         }
+         .Location {text-align: center;}
+
+    .back { z-index: 10;
+    position: absolute;}
+
 
 </style>
-<body>
+<body id="top">
 
-<div id="div1">
+<header id="div1">
 <h>Paris</h>
+</header><br><br>
+
+<!-- Navigation -->
+
+<nav>
+    <ul>
+        <li><a class = "firsta"; href="history.html">History</a></li>
+        <li><a href="culture.html">Culture</a></li>
+        <li><a href="louvre.html">Louvre</a></li>
+        <li><a href="booking.html">Booking</a></li>
+    </ul> 
+
+
+
+
+</nav>
+<main><h1>Paris: a mythical city...</h1>
+    <p>There are a thousand things to do and see in Paris and however much time you 
+        have here, it won’t be enough: Climb to the top of the Eiffel Tower, 
+        stroll down the Champs Elysées, visit the Louvre, see many shows and 
+        exhibitions, or simply wander along the banks of the Seine...read in French
+         in the Tuileries garden, and quite simply take the time to experience the
+          Parisian way of life! Stepping into this whirlwind that takes you from 
+          frenzy to romanticism will leave you with enduring memories. You will 
+          be much more proficient in French, and you will become aware of your 
+          ability to communicate in the language of Molière.</p>
+          <aside><img src="img/champs-elysees.webp" alt="error"></aside>
+    <p>This question is very easy and difficult to answer because in Paris, 
+        it depends on your desires and your aspirations, and how long you plan to 
+        stay. Before deciding on a schedule for your stay, you will have to ask 
+        yourself which things are a must for you. Is your priority to explore the 
+        city? If so, we advise you to check out well-known guides such as Le guide
+         du routard or the Lonely Planet, which provide optimized self-guided tours
+          ranging from 1 to several days, enabling you to take in all the must-see
+           sights in a short amount of time.Upon arriving at the airport or train 
+           station you will have access to a very good public transport network as well
+         as Parisian taxis and a large number of private car services (such as Uber).</p>
+
+ </main>
+ 
+ <div class="divframe">
+    <div class="paragraf"><h1 class="Location"> Location </h1></div>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d83998.9185124463!2d2.347035!3d48.85885484999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e1f06e2b70f%3A0x40b82c3688c9460!2sParis%2C%20France!5e0!3m2!1sen!2srs!4v1704792683741!5m2!1sen!2srs"
+      height="450" style="border:0;" allowfullscreen="" loading="lazy" 
+     referrerpolicy="no-referrer-when-downgrade">
+    
+    </iframe>
+
+
 </div>
+
+<div class="back">
+<a href="#top">Back to the top</a>
+</div>
+     
 
 </body>
 </html>
