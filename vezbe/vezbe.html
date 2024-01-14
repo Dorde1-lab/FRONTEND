@@ -7,30 +7,36 @@
 
 
 <style>
+ @font-face {
+    font-family: dela;
+    src: url(font/dela.ttf);
+ }
 
-    #master {background-color: aqua;
-             display: flex;
-             flex-direction: row;
-             align-items: center;
-             justify-content: center;
-             height: 600px;
-            }
+ body {
+    font-family: dela;
+}
+.parent {     display: inline;
 
-    .div {background-color: black;
-                    width: 200px;
-                    height: 200px;
-                    border: 1px;
-                    margin: 10px;
-                    color: aliceblue;
-                    display: flex;
-                    text-align: center;
-                    flex-direction: row;
-                    justify-content: center;
-                    vertical-align: middle;
+       background-color: antiquewhite;
+       width: 100%;
+       height: 500px;
+}
 
-                   }
-    p {text-align: center;
-    vertical-align: middle;}
+.div1 {     display: inherit;
+
+    background-color: rgb(230, 13, 13);
+    width: 100px;
+    height: 90px;
+}
+.div2 { 
+    display: inherit;
+       width: 100px;
+       height: 100px;
+       background-color: aqua
+    };
+
+
+
 
 </style>
 
@@ -39,9 +45,14 @@
     
 
 <div id="master">
-    <div1 class="div"><p>petar</p></div1>
-    <div2 class="div">pavle</div2>
-    <div3 class="div">pera</div3>
+
+    <div class="parent">
+        <div class="div1">dsadsad</div>
+        <div class="div2">dsadsad</div>
+
+
+
+    </div>    
 
 </div>
 
