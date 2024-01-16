@@ -25,5 +25,5 @@ console.log(age, "age");
 
 var knowsHtml = true;
 var knowJS = false;
-console.log(knowsHtml "knowsHtml");
-console.log(knowJS "knowJS");
+console.log(knowsHtml, "knowsHtml");
+console.log(knowJS, "knowJS");
