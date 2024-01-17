@@ -89,8 +89,16 @@ x %= 2; // 1
 console.log(x);
 
 
-
+//  povrsina
 
   var a = 2;
   var b = 2;
-   c = a*b ;
+console.log (a*b);
+
+// obim kruga
+
+var a = 2;
+var p = 1;
+ console.log (p*a);
+
+
