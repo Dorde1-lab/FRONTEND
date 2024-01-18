@@ -1,12 +1,8 @@
-function sum (a, b)
-{
- console.log(a + b);
-}
-sum (1, 2);
+
 // Provera koji je tip varijable ... IMPORTANT !!!
 
-var testvar= null;
-alert (testvar); //shows null
+var testvar= 5;
+alert (testvar); //shows 5
 alert (typeof testvar); //shows number 
 
 // Number 
@@ -54,15 +50,6 @@ console.log (c++);
 console.log ( c + 9 );
 console.log (++c);
 
-//comparison operators
-var x = 5;
-var y = 2;
-console.log(x == y); //false
-console.log(x != y); //true
-console.log(x > y); //true
-console.log(x < y); //false
-console.log(x >= y); //true
-console.log(x <= y); //false
 
 
 //comparison operators
@@ -100,5 +87,10 @@ console.log (a*b);
 var a = 2;
 var p = 1;
  console.log (p*a);
+
+ /*jdsadksjdsaslkdjsadjlk8*/
+
+console.log (a++);
+console.log (a++);
 
 
