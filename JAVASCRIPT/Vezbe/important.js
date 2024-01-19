@@ -209,23 +209,32 @@
 // console.log(aa);
 // console.log(bb);
 
-let pare = prompt ("Koliko imas para?");
-let kolikoimaspara = parseInt(pare);
-if (kolikoimaspara <=500) {
-    console.log ("Kupi nesto")
-} 
-else {
-    console.log ("Nema para")
+// let pare = prompt ("Koliko imas para?");
+// let kolikoimaspara = parseInt(pare);   
+
+// if (pare <=500) {
+//     console.log ("Kupi nesto");
+// } 
+// else {
+//     console.log ("Nema para");
+// }
+
+
+
+
+// Unos korisnika
+var unos = prompt("Unesite broj od 0 do 11:");
+
+// Provera ispravnosti unosa
+if (isNaN(unos) || unos < 0 || unos > 11) {
+  console.log("Nevažeći unos. Molimo vas da unesete broj od 0 do 11.");
+} else {
+  // Računanje horoskopskog znaka
+  var horoskopskiZnak = function(year) {
+    return (year - 4) % 12;
+  };
+
+  // Prikaz rezultata
+  var rezultat = horoskopskiZnak(parseInt(unos));
+  console.log("Vaš horoskopski znak prema kineskom horoskopu je: " + rezultat);
 }
-
-
-
-    // let money = prompt ("Koliko para imas?");
-    // let moneyNumber = parseInt(money);
-    // if (moneyNumber <=500) {
-    //     console.log("Kupi patike");
-    // }
-    // else {
-    //     console.log ("Skoci s mosta");
-    // }
-    
