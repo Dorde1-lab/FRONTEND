@@ -6,8 +6,8 @@ if (!isNaN(godina)) {
 
     var znak = ["Rat", "Ox", "Tiger", "Rabbit", "Dragon", "Snake", "Horse", "Goat", "Monkey", "Rooster", "Dog", "Pig"];
 
-    var znakindex = (unos - 4) % 12;
-    console.log (znak[znakindex]);}
+    var ostatak = (unos - 4) % 12;
+    console.log (znak[ostatak]);}
     else {
         console.log ("Nista");
     }
