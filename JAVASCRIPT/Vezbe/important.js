@@ -182,20 +182,22 @@
 //       var z = ( x > 10 ? a : b); //ako je x veće od 10 vrednost će biti a, u suprotnom b
 
 // Multiple Conditions
-// const wage = 500;
-// const role = "Zeka peka";
-// let bonus = 0;
 
-// if (role === "Senior") {
-//   bonus = wage * 2.2;
-// } else if (role === "Medium") {
-//   bonus = wage * 1.6;
-// } else if (role === "Junior") {
-//   bonus = wage * 1.2;
-// } else {
-//   bonus = wage * 1.1;
+// let plata = 100;
+// let dohodak = 0;
+
+// let iznos = prompt ("Unesi ime pozicije:");
+// let unos = iznos.toLowerCase();
+
+// if (unos === "senior"){
+//     dohodak = plata *3;
 // }
-// console.log(`A ${role} makes ${bonus} every month!`);
+// else if (unos === "junior"){
+//     dohodak = plata * 2;
+// }
+// console.log ("Vas dohodak je" + " " + dohodak);
+
+
 
 // We ask for an input from the user
 // let input = prompt("Enter a number:");
@@ -205,14 +207,14 @@
 // console.log(numberInput + 10);
 
 // const aa = "AAAAaaa".toLowerCase();  //velika slova postaju mala
-// const bb = "BBBBbbb".toUpperCase();  //mala slova postaju velika
+// const bb = "bbbbbb".toUpperCase();  //mala slova postaju velika
 // console.log(aa);
 // console.log(bb);
 
 // let pare = prompt ("Koliko imas para?");
 // let kolikoimaspara = parseInt(pare);   
 
-// if (pare <=500) {
+// if (kolikoimaspara <=500) {
 //     console.log ("Kupi nesto");
 // } 
 // else {
@@ -222,19 +224,206 @@
 
 
 
-// Unos korisnika
-var unos = prompt("Unesite broj od 0 do 11:");
 
-// Provera ispravnosti unosa
-if (isNaN(unos) || unos < 0 || unos > 11) {
-  console.log("Nevažeći unos. Molimo vas da unesete broj od 0 do 11.");
-} else {
-  // Računanje horoskopskog znaka
-  var horoskopskiZnak = function(year) {
-    return (year - 4) % 12;
-  };
 
-  // Prikaz rezultata
-  var rezultat = horoskopskiZnak(parseInt(unos));
-  console.log("Vaš horoskopski znak prema kineskom horoskopu je: " + rezultat);
-}
+
+// // Unos godine rođenja od strane korisnika
+// var userYearInput = prompt("Unesite godinu rođenja:");
+
+// // Pretvaranje unosa u broj
+// var userYear = parseInt(userYearInput);
+
+// // Provjera ispravnosti unosa
+// if (!isNaN(userYear)) {
+//   // Sifarnik kineskih horoskopskih znakova
+//   var zodiacSigns = ["Rat", "Ox", "Tiger", "Rabbit", "Dragon", "Snake", "Horse", "Goat", "Monkey", "Rooster", "Dog", "Pig"];
+
+//   // Izračunavanje horoskopskog znaka
+//   var zodiacIndex = (userYear - 4) % 12;
+//   if (zodiacIndex < 0) {
+//     zodiacIndex += 12; // Ako je rezultat negativan, dodajemo 12 da dobijemo ispravan indeks
+//   }
+//   var zodiacSign = zodiacSigns[zodiacIndex];
+
+//   // Ispis rezultata
+//   alert("Vaš kineski horoskopski znak je: " + zodiacSign);
+// } else {
+//   alert("Molimo unesite ispravnu godinu rođenja.");
+// }
+
+
+
+var unos = prompt ("Unesi godinu rodjenja:");
+
+var godina = parseInt(unos);
+
+if (!isNaN(godina)) {
+
+    var znak = ["Rat", "Ox", "Tiger", "Rabbit", "Dragon", "Snake", "Horse", "Goat", "Monkey", "Rooster", "Dog", "Pig"];
+
+    var znakindex = (unos - 4) % 12;
+    console.log (znak[znakindex]);}
+    else {
+        console.log ("Nista");
+    }
+
+
+
+
+
+// let unos = prompt ("Unesi broj dana u nedelji");
+// let dan = parseInt(unos);
+
+// switch (dan) {
+//     case 1 :
+//     console.log ("Monday");
+//     break;
+//     case 2 :
+//     console.log ("Thusday");
+//     break;
+//     case 3 :
+//     console.log ("Wednesday");
+//     break;
+//     case 4 :
+//     console.log ("thursday");
+//     break;
+//     case 5 :
+//     console.log ("Friday");
+//     break;
+//     case 6 :
+//     console.log ("Sathurday");
+//     break;
+//     case 7 :
+//     console.log ("Sunday");
+//     break;
+//     default:
+//         console.log ("Unesi pravilan unos")
+//         break;
+// }
+
+
+// let subject = prompt("Choose a subject (JS, C#, HTML)");
+// let subjectToLower = subject.toLowerCase();
+ 
+// switch (subjectToLower) {
+//   case "js":
+//     alert("We are going to learn JS");
+//     break;
+//   case "c#":
+//     alert("We are going to learn C#");
+//     break;
+//   case "html":
+//     alert("We are going to learn HTML");
+//   case "css":
+//     alert("And CSS as well.");
+//     break;
+//   default:
+//     alert("We are not learning anything.");
+//     break;
+// }
+
+// let boja = prompt ("Unesi boju");
+
+// switch (boja) {
+//     case 'crna' :
+//     console.log(` Korisnik je uneo ${boja}`);
+//     break;
+//     case 'bela' :
+//     console.log(` Korisnik je uneo ${boja}`);
+//     break;
+//     case 'crvena' :
+//     console.log(` Korisnik je uneo ${boja}`);
+//     break;
+//     case 'zelena' :
+//     console.log(`Korisnik je uneo ${boja}`);
+//     break;
+//     default:
+//     console.log ("Unesi ime neke boje...")
+//     break;
+// // }
+
+// function rezultat (r,p) {
+//     let povrsina = r*p;
+//     console.log (povrsina, 'povrsina');
+    
+// }
+// rezultat (2, 0.30);
+
+// function fun1 (a, b) {
+//     return a + b;
+// }
+
+// function fun2 (a, b) {
+//     return a * b; 
+// }
+
+// function fun3 (a, b) {
+//     return a - b; 
+
+// }
+
+// function fun4 (a, b) {
+//     return a / b; 
+
+// }
+
+// let rezultat1 = fun1 (2, 3);
+// let rezultat2 = fun2 (2, 3);
+// let rezultat3 = fun3 (2, 3);
+// let rezultat4 = fun4 (2, 3);
+
+// console.log (rezultat1);
+// console.log (rezultat2);
+// console.log (rezultat3);
+// console.log (rezultat4);
+
+
+// let stranica1 = 3;
+// let stranica2 = 2;
+// function povrsina (stranica1, stranica2) {
+//     let rezultat = stranica1 * stranica2;
+//     console.log (rezultat, 'rezultat');
+
+//     if (stranica1 === stranica2)
+//     {
+//         console.log ("Ovo je kvadrat");
+//     } else {
+//         console.log ("Ovo je pavougaonik");
+//     }
+// }
+
+// povrsina (stranica1, stranica2);
+
+// pogledatiiiiiiiiiii
+
+// function y(a, b) {
+//     let k;
+//     let p;
+//     if (a === b) {
+//       k = a * b;
+//     } else if (a > b || b > a) {
+//       p = a * b;
+     
+//     }
+//     return p, k;
+//   }
+   
+//   let povrsina = y(2, 3);
+//   console.log(povrsina);
+
+// let numberInput = parseInt(input);
+
+
+// let plata = 100;
+// let dohodak = 0;
+
+// let iznos = prompt ("Unesi ime pozicije:");
+// let unos = iznos.toLowerCase();
+
+// if (unos === "senior"){
+//     dohodak = plata *3;
+// }
+// else if (unos === "junior"){
+//     dohodak = plata * 2;
+// }
+// console.log ("Vas dohodak je" + " " + dohodak);
