@@ -226,18 +226,6 @@
 
 
 
-
-// // Unos godine rođenja od strane korisnika
-// var userYearInput = prompt("Unesite godinu rođenja:");
-
-// // Pretvaranje unosa u broj
-// var userYear = parseInt(userYearInput);
-
-// // Provjera ispravnosti unosa
-// if (!isNaN(userYear)) {
-//   // Sifarnik kineskih horoskopskih znakova
-//   var zodiacSigns = ["Rat", "Ox", "Tiger", "Rabbit", "Dragon", "Snake", "Horse", "Goat", "Monkey", "Rooster", "Dog", "Pig"];
-
 //   // Izračunavanje horoskopskog znaka
 //   var zodiacIndex = (userYear - 4) % 12;
 //   if (zodiacIndex < 0) {
@@ -253,19 +241,19 @@
 
 
 
-var unos = prompt ("Unesi godinu rodjenja:");
+// var unos = prompt ("Unesi godinu rodjenja:");
 
-var godina = parseInt(unos);
+// var godina = parseInt(unos);
 
-if (!isNaN(godina)) {
+// if (!isNaN(godina)) {
 
-    var znak = ["Rat", "Ox", "Tiger", "Rabbit", "Dragon", "Snake", "Horse", "Goat", "Monkey", "Rooster", "Dog", "Pig"];
+//     var znak = ["Rat", "Ox", "Tiger", "Rabbit", "Dragon", "Snake", "Horse", "Goat", "Monkey", "Rooster", "Dog", "Pig"];
 
-    var znakindex = (unos - 4) % 12;
-    console.log (znak[znakindex]);}
-    else {
-        console.log ("Nista");
-    }
+//     var znakindex = (unos - 4) % 12;
+//     console.log (znak[znakindex]);}
+//     else {
+//         console.log ("Nista");
+//     }
 
 
 
@@ -322,6 +310,8 @@ if (!isNaN(godina)) {
 //     break;
 // }
 
+
+
 // let boja = prompt ("Unesi boju");
 
 // switch (boja) {
@@ -342,12 +332,83 @@ if (!isNaN(godina)) {
 //     break;
 // // }
 
-// function rezultat (r,p) {
-//     let povrsina = r*p;
-//     console.log (povrsina, 'povrsina');
-    
+
+// var voyage = prompt ("Gde zelite da putujete?");
+
+// switch (voyage) {
+//     case 'Evropa': 
+//         console.log ("Uneto je" + " " + voyage);
+//     break;
+
+//     case 'Amerika':
+//         console.log ("Uneto je" + " " + voyage);
+//     break;
+
+//     default:
+//         console.log ("Unesi pravo ime");
+//         break;
+
 // }
-// rezultat (2, 0.30);
+
+
+// TERNARNI IZRAZ UMESTO IF ELSE 
+
+// var broj = 5;
+// var rezultat = (broj > 0) ? "Pozitivan" : "Negativan";
+// console.log(rezultat);
+
+
+// FUNKCIJE !!!
+
+// function mojafunkcija (x, y) {
+//     let mnozenje = x * y;
+//     let sabiranje = x + y;
+//     console.log (mnozenje, 'Ovo je mnozenje');
+//     console.log (sabiranje, 'Ovo je sabiranje');
+
+// }
+// mojafunkcija (2, 2);
+
+
+// function povrsinakruga (radius) {
+//     let povrsina = Math.PI * Math.pow(radius, 2);
+//     return povrsina;
+// }
+
+// let radius = prompt("Unesite vrednost radijusa kruga:");
+
+// radius = parseInt(radius);
+
+// // Provera da li je uneta vrednost validan broj
+// if (isNaN(radius) || radius <= 0) {
+//     console.log("Molimo unesite validan pozitivan broj za radijus kruga.");
+// } else {
+//     // Poziv funkcije i ispis rezultata
+//     let finalnapovrsina = povrsinakruga(radius);
+//     console.log(`Površina kruga sa radijusom ${radius} je: ${finalnapovrsina}`);
+// }
+
+//  izracunavanje povrsine kruga kroz funkciju
+// varijabla kraj predstavlja pozivanje funkcije i ispis;
+
+function krug (raduis) {
+   let povrsina = Math.PI * Math.pow (radius, 2);
+   return povrsina; 
+}
+ let radius = prompt("Upisi radius");
+ 
+radius = parseInt(radius);
+
+if (isNaN(radius) || radius <= 0) {
+    console.log ("unesi pravilan unos")
+} else {
+    let kraj = krug(radius);
+       console.log (kraj);
+}
+
+    
+    // //  primer 2 
+
 
 // function fun1 (a, b) {
 //     return a + b;
@@ -427,3 +488,4 @@ if (!isNaN(godina)) {
 //     dohodak = plata * 2;
 // }
 // console.log ("Vas dohodak je" + " " + dohodak);
+
