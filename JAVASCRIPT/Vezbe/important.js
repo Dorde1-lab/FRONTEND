@@ -391,22 +391,25 @@
 //  izracunavanje povrsine kruga kroz funkciju
 // varijabla kraj predstavlja pozivanje funkcije i ispis;
 
-function krug (raduis) {
-   let povrsina = Math.PI * Math.pow (radius, 2);
-   return povrsina; 
-}
- let radius = prompt("Upisi radius");
+
+
+// function krug (raduis) {
+//    let povrsina = Math.PI * Math.pow (radius, 2);
+//    return povrsina; 
+// }
+// let radius = prompt("Upisi radius");
  
-radius = parseInt(radius);
+// radius = parseInt(radius);
 
-if (isNaN(radius) || radius <= 0) {
-    console.log ("unesi pravilan unos")
-} else {
-    let kraj = krug(radius);
-       console.log (kraj);
-}
+// if (isNaN(radius) || radius <= 0) {
+//     console.log ("unesi pravilan unos")
+// } else {
+//     let kraj = krug(radius);
+//        console.log (kraj);
+// }
 
-    
+
+
     // //  primer 2 
 
 
@@ -424,7 +427,7 @@ if (isNaN(radius) || radius <= 0) {
 // }
 
 // function fun4 (a, b) {
-//     return a / b; 
+//     return a / b;
 
 // }
 
