@@ -1,171 +1,3 @@
-// Vezba if else
-
-// let money = prompt ("Koliko para imas?");
-// let moneyNumber = parseInt(money);
-// if (moneyNumber <=500) {
-//     console.log("Kupi patike");
-// }
-// else {
-//     console.log ("Skoci s mosta");
-// }
-
-
-// const wage = 500;
-// let rezultat = 0;
-
-// let role = prompt ("Napisi Ime").toLowerCase();
-
-//  if (role==="senior") {
-//     bonus=wage*3;
-//  }
-//  else  if (role==="medium") {
-//     bonus=wage*2;
-//  } else  if (role==="junior") {
-//     bonus=wage*1.5;}
-//     else {bonus=wage*1.1}
-// console.log (`${role} zaradjuje ${bonus}`)
-
-
-// U ovom primeru se vidi kako se mogu kombinovati strinogvi uz +
-
-// const plata = 300; 
-// let rezultat  = 0;
-
-// let ime = prompt ("Ime zaposlenog").toLowerCase();
-
-//     if (ime === "senior") {
-//         rezultat = plata*3 ;
-//     }
-//     else {
-//         rezultat = plata*1 ;
-//     }
-//     console.log ( ime, " zaradjuje ", rezultat ) 
-//     console.log ( ime + " zaradjuje " + rezultat ) 
-
-
-
-// const firstName = "Maja";
-// const lastName = "Stefanovic";
-// const fullName = firstName + " " + lastName;
-// console.log("fullName:", fullName);
-
-// var prom1 = "Dobar ";
-// var prom2 = "dan";
-// var rez = prom1.concat(prom2) + "!";
-// console.log(rez);
-
-//razlika izmedju obicne konkatenacije I interpolacije
-// var rez1 = `tekst ${prom1} neki tekst ${prom2} još teksta`;
-// var rez2 = "tekst " + prom1 + " neki tekst " + prom2 + " još teksta";
-// console.log(rez1);
-// console.log(rez2);
-
-
-// var a = "2" + 4;
-
-// console.log(a);
-// var b = 2 + "4";
-// console.log(typeof a );
-// console.log(typeof b );
-
-// var c = 'It\'s really nice to be a programmer';
-// console.log(c);
-
-// var a = 2 / "Djole";
-// console.log(typeof a); 
-// console.log(typeof a === "string");
-
-
-// //Beware
-// console.log(a == NaN);    // false
-// console.log(a === NaN);    // false
-// console.log(isNaN( a ));    // true
-// //buuut
-// var b = "foo";
-// console.log(isNaN( b ));    // true -- ouch! Konvertuje vrednost u broj
-// //ES6 to the rescue
-// //finally
-// console.log(Number.isNaN(b)) // proverava vrednost I da li je broj
-
-
-// var provera = (10 === 10);
-// console.log(typeof provera);
-// console.log(typeof provera === "boolean");
-
-// var djole = "Djole";
-
-// // console.log(djole === "Djole");
-
-// // LOGICAL OPERATORS
-// var statusA = "open";
-// var longitude = 41.44;
-// var latitude = -32.12;
-
-// // Logical AND
-// var rez = (statusA === "open" && longitude > 0); // true and true = true
-// console.log("rez: ", rez); //true because both conditions are true
-
-// // Logical OR
-// var rez = (statusA === "open" || latitude > 0);
-// console.log("rez: ", rez); //true because the first condition is true
-
-// // Logical NOT
-// // Checks if the car value is NOT 'open'
-// var rez2 = (statusA !== "open");
-// console.log("rez", rez2); //false
-
-
-// var pass = 50;	//pass mark
-// var score = 90; //score
-// var hasPassed = (score >= pass); //what is the value in hasPassed? 
-// console.log(hasPassed);
-// // var hasPassed = (score <= pass);
-// // console.log(hasPassed);
-// // An operand can be expression
-// ( (score1 + score2) > (hightScore1 + heightScore2) )
-// operand   //operator  //operand
-// // An operand can be expression
-// ( (5 < 2) && (2 >= 3) ) // result: false
-// expression1   //expression2
-//      operator
-
-// console.log((5 < 2) && (2 >= 3)); //oba su false
-
-// const a = true, b = false;
-// const c = 4;
-// // logical AND
-// console.log(a && a); // true
-// console.log(a && b);  // false
-// console.log((c > 2) && (c < 2)); // false
-
-// const a = true, b = false, c = 4;
-// // logical OR
-// console.log(a || b || false || false); // true
-// console.log(b || b); // false
-// console.log((c>2) || (c<2)); // true
-
-// const a = true, b = false;
-// // logical NOT
-// console.log(!a); // false
-// console.log(!b); // true
-
-
-// var d = 42;
-// var e = "foo";
-// d < e;	 // false
-// d > e;	 // false
-// d == e;	 // false
-
-// console.log(5 == "5") //tačno - string "5" se konvertuje u broj 5
-// console.log(5 === "5") //netačno - iako bi se vrednosti poklopile, tipovi se ne slažu
-// console.log(5 != "5") //netačno - string "5" se konvertuje u broj 5 i onda nisu nejednaki
-// console.log(5 !== "5") //tačno - iako po vrednosti nisu nejednaki, različiti su im tipovi
-
-
-
-
-
-
 
 
 
@@ -200,25 +32,28 @@
 //     console.log(`Površina kruga sa radijusom ${radius} je: ${finalnapovrsina}`);
 // }
 
+
+// function povrsinakruga (radius) {
+//    let povrsina = Math.PI * Math.pow (radius, 2);
+//    return povrsina;
+// }
+
+// let radius = prompt ("unesi radius");
+// radius = parseInt(radius);
+
+// if ( isNaN(radius) || radius <= 0) {
+//     console.log ("Nije unet broj");
+//  } else {
+
+//    let rezultat =  povrsinakruga (radius);
+//    console.log (rezultat);
+//  }
+
+
+
 //  izracunavanje povrsine kruga kroz funkciju
 // varijabla kraj predstavlja pozivanje funkcije i ispis;
 
-
-
-// function krug (raduis) {
-//    let povrsina = Math.PI * Math.pow (radius, 2);
-//    return povrsina; 
-// }
-// let radius = prompt("Upisi radius");
- 
-// radius = parseInt(radius);
-
-// if (isNaN(radius) || radius <= 0) {
-//     console.log ("unesi pravilan unos")
-// } else {
-//     let kraj = krug(radius);
-//        console.log (kraj);
-// }
 
 
 
@@ -270,37 +105,98 @@
 
 // povrsina (stranica1, stranica2);
 
-// pogledatiiiiiiiiiii
-
-// function y(a, b) {
-//     let k;
-//     let p;
-//     if (a === b) {
-//       k = a * b;
-//     } else if (a > b || b > a) {
-//       p = a * b;
-     
+// function povrsina (stranica1, stranica2){
+//      let rezultat = stranica1 * stranica2;
+//      console.log (rezultat);
+//      if (stranica1 === stranica2)
+//      {
+//         console.log ("Ovo je kvadrat");
+//      }
+//     else {
+//         console.log ("pravougonik");
 //     }
-//     return p, k;
+//      }
+//      povrsina (2, 3)
+
+// .
+// .
+// .
+// .
+// .
+// .
+
+
+// function x (a, b) {
+//     let = p = a * b;
+
+//     if (a === b){
+//     p = a * b;
+//     console.log ("Povrsina kvadrata", p);
+//     } else if 
+//     (a > b || b > a) {
+//     p = a * b;
+//     console.log ("Povrsina pavougaonika", p);
+//     } else {
+//         console.log ("Nepoznata povrsina");
+//     }
+//     return p;
+// }
+//     let rezultat = x (3, 2);
+
+
+
+// function temperatura (celzijus) {
+//    let farenhajt = celzijus * 1.8 + 32;
+//    return (farenhajt)
+// }
+// let farenhajt = temperatura(50)
+
+// console.log (farenhajt);
+
+// celzijus = prompt ("upisi temperaturu u celzijusu");
+
+// tempcelzijus = parseInt(celzijus);
+     
+
+// function calculateAge (birthyear, currentyear) {
+//        let godina = currentyear - birthyear;
+//        return godina; 
+// }
+// console.log (calculateAge (1995, 2024));
+
+
+
+// <<<<<<<< MISMATCH >>>>>>>
+
+
+//   function calculateLoan   ( amount, months,interest,name ) {
+// 	//lots and lots of code
+//     console.log(name, amount, months, interest);
 //   }
-   
-//   let povrsina = y(2, 3);
-//   console.log(povrsina);
 
-// let numberInput = parseInt(input);
+// calculateLoan(1000, 12, 7, "John Doe");	 //correct
+// calculateLoan(1000, 12, 7, "John Doe", "Something Extra");	//extras are ignored
+// calculateLoan(1000, 12);   //missing are passed as undefined
 
 
-// let plata = 100;
-// let dohodak = 0;
+// <<<<<<<< DEFAULT PARAMETER >>>>>>>>
 
-// let iznos = prompt ("Unesi ime pozicije:");
-// let unos = iznos.toLowerCase();
 
-// if (unos === "senior"){
-//     dohodak = plata *3;
-// }
-// else if (unos === "junior"){
-//     dohodak = plata * 2;
-// }
-// console.log ("Vas dohodak je" + " " + dohodak);
+// function printValues(name = "Ivan", age, city) {
+//     console.log(name, age, city);
+//   }
+//   printValues("Marija", 24, "Belgrade");
+//   printValues("Marija ", 24, " Belgrade", 1998);
+//   printValues("Marija ", 24);
+//   printValues("Marija ", " Belgrade");
+//   printValues(1, 2, 3);
+//   printValues();
+  
 
+
+// <<<<<<<<< ARROW FONCTION >>>>>>>>
+
+// var multiply = (x, y) => {
+//     var tekst = "Ovo je funkcija";
+//     console.log(tekst)
+// };

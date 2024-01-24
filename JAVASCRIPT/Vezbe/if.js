@@ -1,7 +1,23 @@
+// Vezba if else
+
+// let money = prompt ("Koliko para imas?");
+// let moneyNumber = parseInt(money);
+// if (moneyNumber <=500) {
+//     console.log("Kupi patike");
+// }
+// else {
+//     console.log ("Skoci s mosta");
+// }
+
+
+
+
 // var score = 50;
 // // if(score > 100) {
 // //     alert('You won!'); //Code Block
 // // //     }
+
+
     
 //     if(score >= 100) {
 //         //code goes here
@@ -11,11 +27,6 @@
 //         alert(`You lost! Your score was: ${score}`);
 //       }
 
-//       //uslov ? izraz_tačno : izraz_netačno;
-//       var x = 5; 
-//       var a = 10; 
-//       var b = 20; 
-//       var z = ( x > 10 ? a : b); //ako je x veće od 10 vrednost će biti a, u suprotnom b
 
 // Multiple Conditions
 
@@ -97,3 +108,22 @@
 // var broj = 5;
 // var rezultat = (broj > 0) ? "Pozitivan" : "Negativan";
 // console.log(rezultat);
+
+
+
+// U ovom primeru se vidi kako se mogu kombinovati strinogvi uz +
+
+// const plata = 300; 
+// let rezultat  = 0;
+
+// let ime = prompt ("Ime zaposlenog").toLowerCase();
+
+//     if (ime === "senior") {
+//         rezultat = plata*3 ;
+//     }
+//     else {
+//         rezultat = plata*1 ;
+//     }
+//     console.log ( ime, " zaradjuje ", rezultat ) 
+//     console.log ( ime.concat(rezultat) ) 
+
