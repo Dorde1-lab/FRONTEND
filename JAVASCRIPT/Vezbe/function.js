@@ -1,3 +1,4 @@
+// ...........................................................................
 
 
 
@@ -12,6 +13,10 @@
 
 // }
 // mojafunkcija (2, 2);
+
+
+// ...........................................................................
+
 
 
 // function povrsinakruga (radius) {
@@ -31,6 +36,9 @@
 //     let finalnapovrsina = povrsinakruga(radius);
 //     console.log(`Površina kruga sa radijusom ${radius} je: ${finalnapovrsina}`);
 // }
+
+
+// ...........................................................................
 
 
 // function povrsinakruga (radius) {
@@ -55,9 +63,7 @@
 // varijabla kraj predstavlja pozivanje funkcije i ispis;
 
 
-
-
-    // //  primer 2 
+// ...........................................................................
 
 
 // function fun1 (a, b) {
@@ -89,6 +95,9 @@
 // console.log (rezultat4);
 
 
+// ...........................................................................
+
+
 // let stranica1 = 3;
 // let stranica2 = 2;
 // function povrsina (stranica1, stranica2) {
@@ -105,6 +114,10 @@
 
 // povrsina (stranica1, stranica2);
 
+
+// ...........................................................................
+
+
 // function povrsina (stranica1, stranica2){
 //      let rezultat = stranica1 * stranica2;
 //      console.log (rezultat);
@@ -118,16 +131,11 @@
 //      }
 //      povrsina (2, 3)
 
-// .
-// .
-// .
-// .
-// .
-// .
+// ...........................................................................
 
 
 // function x (a, b) {
-//     let = p = a * b;
+//     let  p = a * b;
 
 //     if (a === b){
 //     p = a * b;
@@ -144,6 +152,8 @@
 //     let rezultat = x (3, 2);
 
 
+// ...........................................................................
+
 
 // function temperatura (celzijus) {
 //    let farenhajt = celzijus * 1.8 + 32;
@@ -153,16 +163,80 @@
 
 // console.log (farenhajt);
 
-// celzijus = prompt ("upisi temperaturu u celzijusu");
 
-// tempcelzijus = parseInt(celzijus);
-     
+// ...........................................................................
+
+
+
+// function temperatura (celzijus){
+//     let farenhajt = celzijus * 1.8 + 32;
+//             return farenhajt;}
+    
+//     let celzijus = prompt ("Unesi temperaturu u celzijusima:");
+//     celzijus = parseInt(celzijus);    
+
+//    console.log (temperatura (celzijus));
+
+
+// ...........................................................................
+
+
 
 // function calculateAge (birthyear, currentyear) {
 //        let godina = currentyear - birthyear;
 //        return godina; 
 // }
 // console.log (calculateAge (1995, 2024));
+
+
+// ...........................................................................
+
+
+
+// Zadatak: Da se ispise parametar koji prikazuje vrednost i vrstu...?
+
+// function parametar (vrednost) {
+//     let vrsta = typeof vrednost;
+//     console.log (' Parametar ', vrednost, ' je ', vrsta, 'tipa' );
+// }
+// parametar ({});
+// parametar (true);
+// parametar (50);
+// parametar ("String");
+// parametar (undifined);
+
+
+// ...........................................................................
+
+
+// function godine (unos){
+
+//       let godinepsa = unos * 7;
+//       console.log (godinepsa);
+
+// }
+
+// let unos = prompt ("broj godina psa:");
+// (godine (unos))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -200,3 +274,4 @@
 //     var tekst = "Ovo je funkcija";
 //     console.log(tekst)
 // };
+
