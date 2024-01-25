@@ -8,6 +8,5 @@ let daycounter = 0;
 
 while (daycounter < days.length) {
 console.log (" Today is ", days[daycounter]);
-daycounter++;
 
 }
