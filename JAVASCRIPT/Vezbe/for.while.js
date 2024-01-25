@@ -10,3 +10,5 @@ while (daycounter < days.length) {
 console.log (" Today is ", days[daycounter]);
 
 }
+
+dsfdsafdsfdsfdsfs
