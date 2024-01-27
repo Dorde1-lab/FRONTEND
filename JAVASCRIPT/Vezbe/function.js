@@ -29,10 +29,13 @@
 // radius = parseInt(radius);
 
 // // Provera da li je uneta vrednost validan broj
+
 // if (isNaN(radius) || radius <= 0) {
 //     console.log("Molimo unesite validan pozitivan broj za radijus kruga.");
 // } else {
+
 //     // Poziv funkcije i ispis rezultata
+
 //     let finalnapovrsina = povrsinakruga(radius);
 //     console.log(`Površina kruga sa radijusom ${radius} je: ${finalnapovrsina}`);
 // }
@@ -220,7 +223,32 @@
 // (godine (unos))
 
 
+function tellStory(name, mood, activity) {
+    var result = "";
+    var i = 0;
+    while (i < tellStory.length) {
+        switch (i) {
+            case 0:
+                result += name + " je bila ";
+                break;
+            case 1:
+                result += mood + " danas. Odlučila je da ";
+                break;
+            case 2:
+                result += activity + ".";
+                break;
+        }
+        i++;
+    }
+    return result;
+}
 
+// Testiranje funkcije
+var name = "Ana";
+var mood = "srećna";
+var activity = "prošeta parkom";
+var story = tellStory(name, mood, activity);
+console.log(story);
 
 
 

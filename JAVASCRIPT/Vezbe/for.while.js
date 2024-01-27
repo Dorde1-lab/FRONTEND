@@ -34,17 +34,19 @@
 
 
 
-// let niz = [2, 4, 1, 5, 2, 10, 7, 9];
-// let suma = 0;
-// let index = 0;
 
-// while (index < niz.length){
-// suma = suma + niz[index];
-// index++
 
-// }
+let niz = [2, 4, 1, 5, 2, 10, 7, 9];
+let suma = 0;
+let index = 0;
 
-// console.log (suma);
+while (index < niz.length){
+suma = suma + niz[index];
+index++
+
+}
+
+console.log (suma);
 
 
 
@@ -147,28 +149,28 @@
 
 
 
-let broj = 101;
-let zbirKvadrata = 0;
+// let broj = 101;
+// let zbirKvadrata = 0;
 
-while (broj < 151) {
-    zbirKvadrata = zbirKvadrata + Math.pow(broj, 2);
-    broj++;
-}
+// while (broj < 151) {
+//     zbirKvadrata = zbirKvadrata + Math.pow(broj, 2);
+//     broj++;
+// }
 
-console.log("Zbir kvadrata brojeva između 101 i 150 je:", zbirKvadrata);
+// console.log("Zbir kvadrata brojeva između 101 i 150 je:", zbirKvadrata);
 
 
 
-let pocetniBroj = 101;
-let suma = 0;
+// let pocetniBroj = 101;
+// let suma = 0;
  
-function SquareNums(pocetniBroj){
-    while(pocetniBroj < 151) {
-        suma += Math.pow(pocetniBroj, 2);
-        pocetniBroj++;
-    }
-    console.log(suma);
-}
-SquareNums(pocetniBroj);
+// function SquareNums(pocetniBroj){
+//     while(pocetniBroj < 151) {
+//         suma += Math.pow(pocetniBroj, 2);
+//         pocetniBroj++;
+//     }
+//     console.log(suma);
+// }
+// SquareNums(pocetniBroj);
 
 
