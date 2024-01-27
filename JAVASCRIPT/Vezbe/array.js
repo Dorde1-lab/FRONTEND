@@ -50,8 +50,82 @@
     // Promena vrednosti na poslednjoj poziciji:
 
 
-        const days = [ 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat', 'Sun' ];
+        // const days = [ 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat', 'Sun' ];
 
-        days[days.length = 1] = 'petar';
-        console.log (days[6]);
+        // days[days.length - 1] = 'petar';
+        // console.log (days[6]);
 
+
+
+// ...........................................................................
+
+
+        // Dodavanje na kraju niza:
+
+
+        // const days = [ 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat', 'Sun' ];
+
+        // days[days.length] = 'No more days in the week'
+        // console.log (days);
+
+
+// ...........................................................................
+
+
+        // Dodavanje sa PUSH
+
+    // let days = [ 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat', 'Sun' ];
+
+    // days.push("DODATAK");
+    // console.log(days);
+
+
+
+
+
+
+        // // Dodavanje vise :
+
+
+    // let days = [ 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat', 'Sun' ];
+
+    // days.push("dodatak 1", "dodatak 2");
+    // console.log(days);
+
+
+// ...........................................................................
+
+
+
+        // // Dodavanje na pocetku:
+
+
+    // let days = [ 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat', 'Sun' ];
+
+    // days.unshift('DODATAK'); 
+    // console.log (days);
+
+
+// ...........................................................................
+
+
+    // Skidanje sa pocetka:   
+
+    // let days = [ 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat', 'Sun' ];
+
+    // days.shift(); 
+    // console.log (days);
+
+
+// ...........................................................................
+
+
+    //  Skidanje sa kraja:
+
+ 
+    // let days = [ 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat', 'Sun' ];
+    // days.pop ();
+    // console.log (days);
+     
+
+// ...........................................................................
