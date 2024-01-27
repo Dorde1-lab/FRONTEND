@@ -58,7 +58,7 @@
 
 
 
-// ...........................................................................
+// ...........................................................................!!!!!!!!!!
 
 
 
@@ -69,12 +69,12 @@ function validateNumber (niz){
 
 
     while ( index < niz.length){
-        if ( !isNaN(niz[index]) ) {
+        if ( isNaN(niz[index]) ) {
 
             console.log ("Neki od brojeva nije validan.");
         } else { switch(index){
             case 0:
-                console.log (index);
+                console.log (niz[0]);
                 break;
 
         }         
