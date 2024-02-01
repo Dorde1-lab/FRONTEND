@@ -95,70 +95,153 @@
 
 
 
+// ...........................................................................
 
 
 
-            function tellStory(name, mood, activity) {
-                var result = "";
-                var i = 0;
-                while (i < tellStory.length) {
-                    switch (i) {
-                        case 0:
-                            result += name + " je bila ";
-                            break;
-                        case 1:
-                            result += mood + " danas. Odlučila je da ";
-                            break;
-                        case 2:
-                            result += activity + ".";
-                            break;
-                    }
-                    i++;
-                }
-                return result;
-            }
+
+//             function tellStory(name, mood, activity) {
+//                 var result = "";
+//                 var i = 0;
+//                 while (i < tellStory.length) {
+//                     switch (i) {
+//                         case 0:
+//                             result += name + " je bila ";
+//                             break;
+//                         case 1:
+//                             result += mood + " danas. Odlučila je da ";
+//                             break;
+//                         case 2:
+//                             result += activity + ".";
+//                             break;
+//                     }
+//                     i++;
+//                 }
+//                 return result;
+//             }
             
-            // Testiranje funkcije
-            var name = "Ana";
-            var mood = "srećna";
-            var activity = "prošeta parkom";
-            var story = tellStory(name, mood, activity);
-            console.log(story);
+//             // Testiranje funkcije
+//             var name = "Ana";
+//             var mood = "srećna";
+//             var activity = "prošeta parkom";
+//             var story = tellStory(name, mood, activity);
+//             console.log(story);
             
 
 
-// ..........................................................................
+// // ..........................................................................
 
 
 
-function validateNumber(number) {
-    // Provera da li je broj validan (primer validacije)
-    return !isNaN(number); // Vraća true ako je broj validan, inače false
-}
+// function validateNumber(number) {
+//     // Provera da li je broj validan (primer validacije)
+//     return !isNaN(number); // Vraća true ako je broj validan, inače false
+// }
 
-function tellStory(name, mood, activity) {
-    var result = "";
-    var i = 0;
-    while (i < 3) {
-        switch (i) {
-            case 0:
-                result += validateNumber(name) ? name + " je bio/la " : "Nevalidan broj za ime ";
-                break;
-            case 1:
-                result += validateNumber(mood) ? mood + " danas. Odlučio/la je da " : "Nevalidan broj za raspoloženje ";
-                break;
-            case 2:
-                result += validateNumber(activity) ? activity + "." : "Nevalidan broj za aktivnost ";
-                break;
+// function tellStory(name, mood, activity) {
+//     var result = "";
+//     var i = 0;
+//     while (i < 3) {
+//         switch (i) {
+//             case 0:
+//                 result += validateNumber(name) ? name + " je bio/la " : "Nevalidan broj za ime ";
+//                 break;
+//             case 1:
+//                 result += validateNumber(mood) ? mood + " danas. Odlučio/la je da " : "Nevalidan broj za raspoloženje ";
+//                 break;
+//             case 2:
+//                 result += validateNumber(activity) ? activity + "." : "Nevalidan broj za aktivnost ";
+//                 break;
+//         }
+//         i++;
+//     }
+//     return result;
+// }
+
+// // Testiranje funkcije
+// var name = "Ana";
+// var mood = "srećan";
+// var activity = "prošeta parkom";
+// var story = tellStory(name, mood, activity);
+// console.log(story);
+
+
+
+// ...........................................................................
+
+
+
+// let niz = [2, 5, 6, 8, 7, 9]
+ 
+// function paranBroj() {
+//     for(let i = 0; i < niz.length; i++) {
+//         if(niz[i] % 2 === 0) {
+//             console.log(niz[i])
+//          }
+//     }
+// }
+ 
+// paranBroj()
+
+
+
+// let niz = [2, 5, 6, 8, 7, 9]
+ 
+// function paranBroj() {
+//     for(let i = 0; i < niz.length; i++) {
+//         if(niz[i] % 2 === 0) {
+//             console.log(niz[i])
+//          }
+//     }
+// }
+ 
+// paranBroj()
+
+
+// let niz = [2, 5, 6, 8, 7, 9];
+// index = 0;
+// rez = 0;
+
+// function prosek (niz){
+//   for(index = 0; index < niz.length; index++){
+//     rez += niz[index] / 6;
+//   }
+//   console.log (rez);
+
+// }
+
+// prosek (niz)
+
+
+
+// function prostBroj (broj){
+//   if (broj / 1 === broj || broj / broj === 1){
+
+//   }
+
+// }
+
+
+
+   let niz = [2, 5, 6, 8, 7, 9];
+let zbir = 0;
+
+function sum(niz) {
+    for (let i = 0; i < niz.length; i++) {
+        if (niz[i] % 2 !== 0) {
+            zbir += niz[i]; // Dodajemo trenutni neparni broj na zbir
         }
-        i++;
     }
-    return result;
+    console.log(zbir);
 }
 
-// Testiranje funkcije
-var name = "Ana";
-var mood = "srećan";
-var activity = "prošeta parkom";
-var story = tellStory(name, mood, activity);
-console.log(story);
+sum(niz);
+
+
+
+// How many times is a number contained in an array
+// Write a function named findNumber that:
+// Takes 2 arguments: number, array
+// Calculates how many times the number is contained in an array with numbers
+// Outputs the result to the screen like so: "There is 4 occurrences of number 5 in the array"
+// Call the function three times with different arrays.
