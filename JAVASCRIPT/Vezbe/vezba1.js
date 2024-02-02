@@ -96,40 +96,45 @@
 
 
 // ...........................................................................
+//  Ispisivanje "price" kroz switch i while...
 
 
 
-
-//             function tellStory(name, mood, activity) {
-//                 var result = "";
-//                 var i = 0;
-//                 while (i < tellStory.length) {
-//                     switch (i) {
-//                         case 0:
-//                             result += name + " je bila ";
-//                             break;
-//                         case 1:
-//                             result += mood + " danas. Odlučila je da ";
-//                             break;
-//                         case 2:
-//                             result += activity + ".";
-//                             break;
-//                     }
-//                     i++;
-//                 }
-//                 return result;
-//             }
+            // function tellStory(name, mood, activity) {
+            //     var result = "";
+            //     var i = 0;
+            //     while (i < tellStory.length) {
+            //         switch (i) {
+            //             case 0:
+            //                 result += name + " je bila ";
+            //                 break;
+            //             case 1:
+            //                 result += mood + " danas. Odlučila je da ";
+            //                 break;
+            //             case 2:
+            //                 result += activity + ".";
+            //                 break;
+            //         }
+            //         i++;
+            //     }
+            //     return result;
+            // }
             
-//             // Testiranje funkcije
-//             var name = "Ana";
-//             var mood = "srećna";
-//             var activity = "prošeta parkom";
-//             var story = tellStory(name, mood, activity);
-//             console.log(story);
+            // // Testiranje funkcije
+            // var name = "Ana";
+            // var mood = "srećna";
+            // var activity = "prošeta parkom";
+            // var story = tellStory(name, mood, activity);
+            // console.log(story);
             
 
 
 // // ..........................................................................
+
+
+
+//    OVO PROVERITI SA NEKIM  ???
+
 
 
 
@@ -184,18 +189,9 @@
 // paranBroj()
 
 
+// ...........................................................................
 
-// let niz = [2, 5, 6, 8, 7, 9]
- 
-// function paranBroj() {
-//     for(let i = 0; i < niz.length; i++) {
-//         if(niz[i] % 2 === 0) {
-//             console.log(niz[i])
-//          }
-//     }
-// }
- 
-// paranBroj()
+
 
 
 // let niz = [2, 5, 6, 8, 7, 9];
@@ -213,29 +209,48 @@
 // prosek (niz)
 
 
+// ...........................................................................
 
-// function prostBroj (broj){
-//   if (broj / 1 === broj || broj / broj === 1){
 
-//   }
 
+//    let niz = [2, 5, 6, 8, 7, 9];
+// let zbir = 0;
+
+// function sum(niz) {
+//     for (let i = 0; i < niz.length; i++) {
+//         if (niz[i] % 2 !== 0) {
+//             zbir += niz[i]; // Dodajemo trenutni neparni broj na zbir
+//         }
+//     }
+//     console.log(zbir);
 // }
+ 
+// sum(niz);
+
+
+// ...........................................................................
 
 
 
-   let niz = [2, 5, 6, 8, 7, 9];
-let zbir = 0;
+//  NAJVECI BROJ U NIZU; !!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-function sum(niz) {
-    for (let i = 0; i < niz.length; i++) {
-        if (niz[i] % 2 !== 0) {
-            zbir += niz[i]; // Dodajemo trenutni neparni broj na zbir
-        }
-    }
-    console.log(zbir);
-}
 
-sum(niz);
+// let niz = [50, 4, 40, 5, 2, 10, 7, 9];
+// let najveciBroj = niz[0];
+// let index = 1;
+
+// function najveci (niz){
+//     while (index < niz.length){
+//         if (niz[index] > najveciBroj) {
+//             najveciBroj = niz[index];
+//         }
+//     index++
+//     }
+//     return najveciBroj;
+// }
+// console.log(najveci (niz));
+
+
 
 
 
@@ -245,3 +260,182 @@ sum(niz);
 // Calculates how many times the number is contained in an array with numbers
 // Outputs the result to the screen like so: "There is 4 occurrences of number 5 in the array"
 // Call the function three times with different arrays.
+
+
+
+// ...........................................................................
+
+
+
+
+// let nizStringova = [ 'Danas', 'je', 'bio', 'lep', 'dan', '!' ];
+// let brojacStringa = 0;
+// function StringoviFunkcija(nizStringova) {
+
+//   while (brojacStringa < nizStringova.length) {
+//     console.log(nizStringova[brojacStringa]);
+//     brojacStringa++;
+//   }
+// }
+
+// StringoviFunkcija(nizStringova);
+
+
+// ...........................................................................
+
+
+
+// let niz = [2, 4, 7, 5, 10, 9];
+// let zbir = 0;
+
+// function paranBroj (niz){
+//   for (i = 0; i < niz.length ; i++){
+//      if (niz[i] % 2 === 0){
+//        zbir += niz[i];
+//      }
+//   }
+//   console.log (zbir);
+// }
+// paranBroj (niz)
+
+
+
+// ...........................................................................
+//  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+//  da klijent unese brojeve u niz i duzinu niza sam da napravi !!!
+// ....................BITNOOOOOOOOO...........................
+
+
+
+  let duzina = prompt ("unesi duzinu niza:");
+  let niz = new Array(duzina);
+
+  for (let i = 0; i < duzina; i++){
+    niz[i] = prompt ("Unesi broj za ispunjavanje niza:");
+  }
+
+  for (let i = 0; i < duzina; i++){
+    console.log (niz[i]);
+  }
+
+  for (let i = 0; i <= niz.length; i++){
+    if(niz[i] % 2 === 0){
+      console.log (niz[i]);
+    }
+  }
+
+
+  // ...........................................................................
+//  pravljenje proseka od brojeva niza.
+
+
+  // let niz = [2, 4, 7, 5, 10, 9];
+  // let suma = 0;
+
+  // function prosek (niz){
+  //    for (i = 0; i < niz.length; i++){
+  //       suma += niz[i];
+  //    }
+  // let rez = suma / niz.length;
+  // console.log(rez);
+  // }
+  // prosek (niz)
+
+
+    // ...........................................................................
+
+
+    
+
+// function findNumber(array, type) {
+//     // Create an empty array to store the result
+//     let result = [];
+
+//     // Check if the type argument is 'even' or 'odd'
+//     if (type === 'even') {
+//         // Find even numbers and push them into the result array
+//         for (let number of array) {
+//             if (number % 2 === 0) {
+//                 result.push(number);
+//             }
+//         }
+//     } else if (type === 'odd') {
+//         // Find odd numbers and push them into the result array
+//         for (let number of array) {
+//             if (number % 2 !== 0) {
+//                 result.push(number);
+//             }
+//         }
+//     } else {
+//         // If the type argument is neither 'even' nor 'odd', return an error message
+//         return 'Invalid type. Please provide either "even" or "odd".';
+//     }
+
+//     // Return the result array
+//     return result;
+// }
+
+// // Example usage:
+// let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+// console.log(findNumber(numbers, 'even')); // Find and print even numbers
+// console.log(findNumber(numbers, 'odd')); // Find and
+
+
+
+// let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+// function findNumber(array, type){
+//    if ( type === "even"){
+//       for (i = 0; i < numbers.length; i++){
+//         if ( numbers[i] % 2 === 0){
+//            console.log (numbers[i]);
+//         }
+//       }
+//    } else if ( type === "odd"){
+//     for (i = 0; i < numbers.length; i++){
+//         if (numbers[i] % 2 !== 0){
+//             console.log (numbers[i]);
+//         }
+//     }
+//    } else {
+//      console.log ("Invalid input");
+//    }
+
+// }
+// findNumber(numbers, "even");
+
+
+
+    // ...........................................................................
+
+
+
+    function findNumber(array, type) {
+      let rezultat = [];
+      
+         if ( type === "even"){
+           for ( let number of array){
+              if (number % 2 === 0){
+                  rezultat.push(number);
+              }
+           }
+         } else if ( type === "odd"){
+           for (let number of array){
+              if (number % 2 !== 0){
+                  rezultat.push(number);
+              }
+           }
+         } else {
+           console.log ("Los unos");
+         }
+         console.log (rezultat);
+      }
+      let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+      
+      findNumber(numbers, "odd");
+
+
+ // ...........................................................................

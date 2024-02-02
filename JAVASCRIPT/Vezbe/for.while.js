@@ -1,17 +1,4 @@
 
-
-// ...........................................................................
-
-// let days = [ 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat', 'Sun' ];
-
-// let daycounter = 0;
-
-// while (daycounter < days.length) {
-// console.log (" Today is ", days[daycounter]);
-
-// }
-
-
 // ...........................................................................
 
 
@@ -36,17 +23,17 @@
 
 
 
-let niz = [2, 4, 1, 5, 2, 10, 7, 9];
-let suma = 0;
-let index = 0;
+// let niz = [2, 4, 1, 5, 2, 10, 7, 9];
+// let suma = 0;
+// let index = 0;
 
-while (index < niz.length){
-suma = suma + niz[index];
-index++
+// while (index < niz.length){
+// suma = suma + niz[index];
+// index++
 
-}
+// }
 
-console.log (suma);
+// console.log (suma);
 
 
 
@@ -77,33 +64,6 @@ console.log (suma);
 // funkcija (nizStringova)
 
 
-// ...........................................................................
-
-
-
-// const nizZaProveru = [2, 4, 1, 5, 2, 10, 7, 9];
-// const duzinaNiza = nizZaProveru.length; //duzina niza
- 
-// console.log(nizZaProveru[2]);
- 
-// function naveciBrojFunkcija(nizZaProveru) {
- 
-//   let brojac = 0; //pomocna promenljiva za povecavanje indexa tj pozicije u nizu
-//   let najveci = 0; //pomocna promenljiva za cuvanje najveceg broja
- 
-//   while (brojac < duzinaNiza) {
-   
-//     if (nizZaProveru[brojac] > najveci) {
-//       najveci = nizZaProveru[brojac];
- 
-//     }
-//     brojac++;
-//   }
-//   return najveci;
-// }
-// const najveciBroj = naveciBrojFunkcija(nizZaProveru);
-
-
 
 // ...........................................................................
 
@@ -130,21 +90,44 @@ console.log (suma);
 
 // ...........................................................................
 
+//  NAJVECI BROJ U NIZU;
 
 
-// let niz = ["101", "150"];
-// let index = 0;
-// let zbirKvadrata = 0;
+// let niz = [2, 4, 40, 5, 2, 10, 7, 9];
+// let najveciBroj = niz[0];
+// let index = 1;
 
-// function zbir (niz){
+// function najveci (niz){
 //     while (index < niz.length){
-
-//          zbirKvadrata = Math.pow (niz[index], 2)
-//          index++
+//         if (niz[index] > najveciBroj) {
+//             najveciBroj = niz[index];
+//         }
+//     index++
 //     }
+//     return najveciBroj;
 // }
-// zbir (niz);
-// console.log (zbirKvadrata);
+// console.log(najveci (niz));
+
+
+
+
+
+// ...........................................................................
+
+
+
+// let broj = 101;
+// zbirKvadrata = 0;
+
+// function zbir () {
+//     while (broj < 151){
+//        zbirKvadrata = zbirKvadrata + Math.pow(broj, 2);
+//        broj++
+//     }
+//     return zbirKvadrata;
+// }
+// console.log(zbir ());
+
 
 
 
@@ -161,10 +144,13 @@ console.log (suma);
 
 
 
+// // ...........................................................................
+
+
 // let pocetniBroj = 101;
 // let suma = 0;
- 
-// function SquareNums(pocetniBroj){
+
+// // function SquareNums(pocetniBroj){
 //     while(pocetniBroj < 151) {
 //         suma += Math.pow(pocetniBroj, 2);
 //         pocetniBroj++;
@@ -174,3 +160,55 @@ console.log (suma);
 // SquareNums(pocetniBroj);
 
 
+// // ...........................................................................
+
+
+// let number = 1425;
+// let numberString = number.toString();
+
+
+// for (let i = 0; i < numberString.length; i++) {
+//     console.log(numberString[i]);
+// }
+
+
+
+// // ...........................................................................
+
+
+
+// let number = 1425;
+
+// // Iteriramo kroz broj sve dok ne postane 0
+// while (number > 0) {
+//     // Izdvajamo posljednju cifru broja koristeći % 10
+//     let digit = number % 10;
+
+//     // Ispisujemo izdvojenu cifru
+//     console.log(digit);
+
+//     // Uklanjamo posljednju cifru iz broja (math.floor uklanja poslednju cifru, 
+//     // sto znaci da u svakoj interaciji radimo sa manjim brojem)
+//     number = Math.floor(number / 10);
+// }
+
+
+
+// // ...........................................................................
+//    FOR .......   OF 
+
+
+// Definiramo niz objekata
+// let ljudi = [
+//     { ime: 'Ana', godine: 30 },
+//     { ime: 'Marko', godine: 25 },
+//     { ime: 'Petra', godine: 35 },
+//     { ime: 'Ivan', godine: 40 }
+// ];
+
+// // Prikazujemo osobe starije od 30 godina
+// for (let osoba of ljudi) {
+//     if (osoba.godine > 30) {
+//         console.log(osoba.ime + ' ima više od 30 godina.');
+//     }
+// }
