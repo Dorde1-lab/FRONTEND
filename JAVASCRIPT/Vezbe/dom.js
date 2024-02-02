@@ -77,3 +77,27 @@
 
 
 
+//  let header = document.getElementById("myTitle");
+//  console.log(header.innerText); // Checking what the text is
+//  header.innerText = ""; // Changing the text to nothing
+//  console.log(header.innerText);
+//  header.innerText = "New TEXT!";
+//  console.log(header.innerText);
+//  header.innerText += " Ultra new text";
+//  console.log(header.innerText);
+
+
+
+ // ...........................................................................
+
+
+
+
+// let myDiv = document.getElementById("main");
+// console.log(myDiv);
+// // Adding new element in the div
+// myDiv.innerHTML += `<p class="new"> 
+// Paragraph generated from JavaScript
+// </p>`;
+// console.log(myDiv);
+// myDiv.innerHTML = ""; // removing all code from myDiv

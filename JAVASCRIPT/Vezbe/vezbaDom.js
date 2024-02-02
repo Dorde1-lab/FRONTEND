@@ -17,6 +17,16 @@ function printGrades(subjects, grades, element){
         element.innerHTML += `<li>${subjects[i]}: ${grades[i]}</li>`;
     }
     element.innerHTML += "</ul>"
+    
+}
+function printGrades(subjects, grades, element){
+    console.log(element);
+    element.innerHTML = ""; // clearing element
+    element.innerHTML += "<ul>";
+    for(let i=0; i < subjects.length; i++){
+        element.innerHTML += `<li>${subjects[i]}: ${grades[i]}</li>`;
+    }
+    element.innerHTML += "</ul>"
 }
 
 function printStudents(students, element){
@@ -50,3 +60,31 @@ function academyPanel(person, name){
   let input = prompt("Are you a student or a teacher?");
 let name = prompt("What is your name?");
 academyPanel(input, name);
+
+
+
+
+// // ...........................................................................
+
+
+
+
+// let numbers = [2, 4, 5];
+
+// // Accessing the <ul> element
+// let numbersList = document.getElementById("numbersList");
+// let sum = 0;
+
+// // Printing each number as a list item and calculating the sum
+// let listContent = '';
+// for (let i = 0; i < numbers.length; i++) {
+//   listContent += `<li>${numbers[i]}</li>`;
+//   sum += numbers[i];
+// }
+
+// // Setting the HTML content of the list
+// numbersList.innerHTML = listContent;
+
+// // Displaying the sum
+// document.getElementById("sum").textContent = "Sum: " + sum;
+
