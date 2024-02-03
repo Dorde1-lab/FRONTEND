@@ -30,22 +30,3 @@
 // // ...........................................................................
 
 
-// Array with numbers
-let numbers = [2, 4, 5];
-
-// Accessing the <ul> element
-let numbersList = document.getElementById("numbersList");
-let sum = 0;
-
-// Printing each number as a list item and calculating the sum
-let listContent = '';
-for (let i = 0; i < numbers.length; i++) {
-  listContent += `<li>${numbers[i]}</li>`;
-  sum += numbers[i];
-}
-
-// Setting the HTML content of the list
-numbersList.innerHTML = listContent;
-
-// Displaying the sum
-document.getElementById("sum").textContent = "Sum: " + sum;

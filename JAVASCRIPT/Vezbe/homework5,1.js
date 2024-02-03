@@ -11,7 +11,7 @@ for (let i = 0; i < numbers.length; i++){
     sum += numbers[i];
 }
 
- numbersList.innerHTML = lista;
+ numbersList.innerHTML += lista;
 
  let suma = document.getElementById("sum");
- suma.innerHTML = " Ovo je zbir: " + sum; 
+ suma.innerHTML += " Ovo je zbir: " + sum; 
