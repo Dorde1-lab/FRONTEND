@@ -310,22 +310,22 @@
 
 
 
-  let duzina = prompt ("unesi duzinu niza:");
-  let niz = new Array(duzina);
+  // let duzina = prompt ("unesi duzinu niza:");
+  // let niz = new Array(duzina);
 
-  for (let i = 0; i < duzina; i++){
-    niz[i] = prompt ("Unesi broj za ispunjavanje niza:");
-  }
+  // for (let i = 0; i < duzina; i++){
+  //   niz[i] = prompt ("Unesi broj za ispunjavanje niza:");
+  // }
 
-  for (let i = 0; i < duzina; i++){
-    console.log (niz[i]);
-  }
+  // for (let i = 0; i < duzina; i++){
+  //   console.log (niz[i]);
+  // }
 
-  for (let i = 0; i <= niz.length; i++){
-    if(niz[i] % 2 === 0){
-      console.log (niz[i]);
-    }
-  }
+  // for (let i = 0; i <= niz.length; i++){
+  //   if(niz[i] % 2 === 0){
+  //     console.log (niz[i]);
+  //   }
+  // }
 
 
   // ...........................................................................
@@ -385,6 +385,10 @@
 
 
 
+    // ...........................................................................
+
+
+
 // let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
 // function findNumber(array, type){
@@ -413,52 +417,52 @@
 
 
 
-    function findNumber(array, type) {
-      let rezultat = [];
+    // function findNumber(array, type) {
+    //   let rezultat = [];
       
-         if ( type === "even"){
-           for ( let number of array){
-              if (number % 2 === 0){
-                  rezultat.push(number);
-              }
-           }
-         } else if ( type === "odd"){
-           for (let number of array){
-              if (number % 2 !== 0){
-                  rezultat.push(number);
-              }
-           }
-         } else {
-           console.log ("Los unos");
-         }
-         console.log (rezultat);
-      }
-      let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+    //      if ( type === "even"){
+    //        for ( let number of array){
+    //           if (number % 2 === 0){
+    //               rezultat.push(number);
+    //           }
+    //        }
+    //      } else if ( type === "odd"){
+    //        for (let number of array){
+    //           if (number % 2 !== 0){
+    //               rezultat.push(number);
+    //           }
+    //        }
+    //      } else {
+    //        console.log ("Los unos");
+    //      }
+    //      console.log (rezultat);
+    //   }
+    //   let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
       
-      findNumber(numbers, "odd");
+    //   findNumber(numbers, "odd");
 
 
  // ...........................................................................
 
 
 
- Want to know how you wiegh in chikens? No problem!
+//  Want to know how you wiegh in chikens? No problem!
 
-Write a function named weightInChickens that:
-Takes an input weigh in kilograms
-Calculates weight in chickens ( 1 chicken = 0.5kg )
-The input should be entered through prompt
-The result should be shown in the HTML of the page
-Note:The html page needs to have title and result paragraph
-
-
- // ...........................................................................
+// Write a function named weightInChickens that:
+// Takes an input weigh in kilograms
+// Calculates weight in chickens ( 1 chicken = 0.5kg )
+// The input should be entered through prompt
+// The result should be shown in the HTML of the page
+// Note:The html page needs to have title and result paragraph
 
 
+//  // ...........................................................................
 
-Ask the user for the name of the recipe
-Ask the user how many ingredients do we need for the recipe
-Ask the user for the name of every ingredient
-Print the name of the recipe in the HTML as heading element, ex: h1-h6
-Print all ingredients as an unordered list in the HTML
-Extra: Use a table if you want to be fancy :)
+
+
+// Ask the user for the name of the recipe
+// Ask the user how many ingredients do we need for the recipe
+// Ask the user for the name of every ingredient
+// Print the name of the recipe in the HTML as heading element, ex: h1-h6
+// Print all ingredients as an unordered list in the HTML
+// Extra: Use a table if you want to be fancy :)
