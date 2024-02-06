@@ -106,4 +106,3 @@
 //     result.innerText = getUserInfo(inputs);}
 
 
-

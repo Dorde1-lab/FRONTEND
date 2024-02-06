@@ -83,7 +83,7 @@
 
 // }
 
-// sabiranje (niz)
+// sabiranje (niz);
 // console.log (suma);
 
 
@@ -165,7 +165,6 @@
 
 // let number = 1425;
 // let numberString = number.toString();
-
 
 // for (let i = 0; i < numberString.length; i++) {
 //     console.log(numberString[i]);
