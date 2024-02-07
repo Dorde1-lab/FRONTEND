@@ -62,26 +62,45 @@
 // number(numbers);
 
 
+
+
 // ...........................................................................
 
 
-let arr = [3, 5, 6, 8, 11];
-let min = arr[0];
-let max = arr[0];
+// let arr = [3, 5, 6, 8, 11];
+// let min = arr[0];
+// let max = arr[0];
 
 
-function minAndMacnumber(arr){
-for (let i = 1; i < arr.length; i++){
-    if (arr[i] > max){
-        max = arr[i];
-    }
-    if (arr[i] < min){
-        min = arr[i];
-    }
-}
-let sum = max + min;
+// function minAndMacnumber(arr){
+// for (let i = 1; i < arr.length; i++){
+//     if (arr[i] > max){
+//         max = arr[i];
+//     }
+//     if (arr[i] < min){
+//         min = arr[i];
+//     }
+// }
+// let sum = max + min;
 
-return {"max": max, "min": min, "sum": sum };
+// return {"max": max, "min": min, "sum": sum };
 
-}
-console.log(minAndMacnumber(arr))
+// }
+// console.log(minAndMacnumber(arr))
+
+
+// ...........................................................................
+
+
+// let first = ["Bob", "Jill"]
+// let last = ["Gregory", "Wurtz"]
+// let fullnames = [];
+
+// function ispis (first, last){
+//     for (let i = 0; i < first.length && i < last.length; i++){
+//         let combination = `${i + 1}. ${first} ${last}`
+//         fullnames.push(combination);
+//     }
+//     return fullnames;
+// }
+// console.log(ispis (first, last));
