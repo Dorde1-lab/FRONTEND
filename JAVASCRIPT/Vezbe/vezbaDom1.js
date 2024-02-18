@@ -46,7 +46,7 @@
 // let email = document.getElementById("email");
 // let dugme = document.getElementById("dugme");
 
-// function ispis (){
+// // function ispis (){
 
 // let ime1 = ime.value;
 // let prezime1 = prezime.value;
@@ -64,6 +64,10 @@
 // dugme.onclick = ispis;
 
 
+// // ...........................................................................
+
+
+
 
 // // ...........................................................................
 // ovo ispod je kod koji se moze staviti umesto FOR petlje da bi se ispisalo sve to
@@ -79,7 +83,7 @@
 // // Otvaranje novog prozora i postavljanje HTML sadržaja na string niza
 // let noviProzor = window.open('');
 // noviProzor.document.write(`<p>${stringNiza}</p>`);
-// }
+
 
 // dugme.onclick = ispis;
 
@@ -103,6 +107,5 @@
 //     return result;
 // }
 // submitBtn.addEventListener("click", function(){
-//     result.innerText = getUserInfo(inputs);}
-
+//     result.innerText = getUserInfo(inputs);})
 

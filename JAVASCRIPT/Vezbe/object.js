@@ -34,16 +34,16 @@
 // podaci.novo = 20;
 // console.log(podaci);
 
-let auto = {
-    model: "Peugeot",
-    color: "black",
-    year: "2015",
-    fuel: "5.5",
+// let auto = {
+//     model: "Peugeot",
+//     color: "black",
+//     year: "2015",
+//     fuel: "5.5",
 
-    consumption: function(distance){
-        return distance / 100 * this.fuel
-    }
+//     consumption: function(distance){
+//         return distance / 100 * this.fuel
+//     }
 
 
-}
-console.log(auto.consumption(500));
+// }
+// console.log(auto.consumption(500));
