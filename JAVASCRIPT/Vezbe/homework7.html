@@ -1,4 +1,4 @@
-<!-- <!DOCTYPE html>
+ <!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -10,7 +10,7 @@
     <h2>Student Registry Form</h2>
     <form id="studentForm">
       <label for="firstName">First Name:</label>
-      <input type="text" id="firstName" required>
+      <input type="text" id="firstName" required>    ........................ vezba
   
       <label for="lastName">Last Name:</label>
       <input type="text" id="lastName" required>
@@ -18,67 +18,38 @@
       <label for="age">Age:</label>
       <input type="number" id="age" required>
   
-      <!-- Changed the type to "submit" to trigger the form submission -->
-      <!-- <button type="submit">Save</button>
+       <button type="submit">Save</button>
     </form>
 
     <script src="homework7.js"></script>
 </body>
-</html> --> -->
+</html> 
+ -->
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Student Registry</title>
-</head>
-<body>
-  <h2>Student Registry Form</h2>
-  <form id="studentForm">
-    <label for="firstName">First Name:</label>
-    <input type="text" id="firstName" required>
 
-    <label for="lastName">Last Name:</label>
-    <input type="text" id="lastName" required>
 
-    <label for="age">Age:</label>
-    <input type="number" id="age" required>
 
-    <!-- Changed the type to "submit" to trigger the form submission -->
-    <button type="submit">Save</button>
-  </form>
 
-  <script>
-    // Array to store students
-    let students = [];
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <label for="name">Name:</label>
+    <input type="text" id="name" required>
+    <label for="name">Kind:</label>
+    <input type="text" id="kind" required>  
+    <label for="name">Message:</label>                       
+    <input type="text" id="message" required>
 
-    // Function to handle form submission
-    document.getElementById('studentForm').addEventListener('submit', function(event) {
-      // Prevent the default form submission
-      event.preventDefault();
+    <button onclick="speak()">Speak</button>
 
-      // Get values from the form
-      let firstName = document.getElementById('firstName').value;
-      let lastName = document.getElementById('lastName').value;
-      let age = parseInt(document.getElementById('age').value);
 
-      // Create a student object
-      let student = {
-        firstName: firstName,
-        lastName: lastName,
-        age: age
-      };
 
-      // Add the student to the array
-      students.push(student);
+    <script src="homework7.js"></script>
 
-      // Log the array in the console
-      console.log("Students Registry:", students);
-
-      // Optional: Clear the form after saving
-      document.getElementById('studentForm').reset();
-    });
-  </script>
-</body>
-</html>
+ </body>
+ </html>
