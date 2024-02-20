@@ -14,12 +14,9 @@
 // };
 // podaci.osnovniPodaci();
 
-// podaci.ime = "Tamara";
-// podaci.godiste = 1997;
-// podaci.obrazovanje = "fakultet";
-// podaci.grad = "nis";
 
-// podaci.osnovniPodaci();
+
+
 
 
 // let podaci = {
@@ -28,11 +25,14 @@
 //     obrazovanje: "fakultet",
 //     grad: "Beograd",
 // }
-// delete podaci.grad;
+// delete podaci.grad;             ......................... delete
 // console.log(podaci);
 
 // podaci.novo = 20;
 // console.log(podaci);
+
+
+
 
 // let auto = {
 //     model: "Peugeot",
@@ -47,3 +47,37 @@
 
 // }
 // console.log(auto.consumption(500));
+
+
+
+
+
+
+// let trainer = { 
+// 	name :  "Stefan",
+// 	lastName: "Stefanovski",
+// 	academy: "SEDC",
+// 	lecture: "Objects"
+// }
+
+
+// delete trainer.lecture;
+// trainer.age = 25;
+// trainer.getFullName = function(){
+//   return `${trainer.name} ${trainer.lastName}`;
+// }
+// console.log(trainer.getFullName());
+
+
+
+// function pera (mama, tata, godine){
+//     this.mojaMama = mama;
+//     this.mojTata = tata;
+//     this.mojeGodine = godine;
+// }
+
+// let mara = new pera ("vesna", "goran", "23");
+
+// mara.zanimanje = "kkkkk";
+// console.log (mara.zanimanje);
+
