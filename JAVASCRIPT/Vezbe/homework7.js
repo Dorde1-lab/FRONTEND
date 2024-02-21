@@ -16,7 +16,6 @@
 //         } 
 //     }
 //     Animal.speak();
-
 // }
 
 
@@ -75,29 +74,29 @@
 
 
 
-// let students = [];
+let students = [];
 
-// function Student (firstName, lastName, age){
-//     this.firstName = firstName;
-//     this.lastName = lastName;
-//     this.age = age;
-// }
+function Student (firstName, lastName, age){
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.age = age;
+}
 
-// document.getElementById("studentForm").addEventListener("submit", function(myFunction){
-//     myFunction.preventDefault();
+document.getElementById("studentForm").addEventListener("submit", function(myFunction){
+    myFunction.preventDefault();
 
-//     let firstName = document.getElementById("firstName").value;
-//    let lastName = document.getElementById("lastName").value;
-//    let age = parseInt(document.getElementById("age").value);
+    let firstName = document.getElementById("firstName").value;
+   let lastName = document.getElementById("lastName").value;
+   let age = parseInt(document.getElementById("age").value);
 
-//    let student = new Student (firstName, lastName, age);
+   let student = new Student (firstName, lastName, age);
 
-//    students.push(student);
+   students.push(student);
 
-//    console.log(students);
-//    document.getElementById("studentForm").reset();
+   console.log(students);
+   document.getElementById("studentForm").reset();
 
-// })
+})
 
 
 

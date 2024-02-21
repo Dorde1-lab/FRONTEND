@@ -191,6 +191,11 @@
 //     number = Math.floor(number / 10);
 // }
 
+// u ovom primeru prvo modulom izdvajamo poslenju cifru pa uz math.floor zaokruzujemo
+// broj na 142 jer ta funkcija brise poslednji broj. Onda se taj manji broj vraca
+// na novu iteraciju i opet se izbacuje poslednji broj.
+
+
 // // ...........................................................................
 //    FOR .......   OF 
 

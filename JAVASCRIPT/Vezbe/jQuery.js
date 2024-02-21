@@ -1,0 +1,21 @@
+let allElements = $("*"); 
+let byIdElement = $("#mainTitle"); 
+let byClassElements = $(".innerWrapper"); 
+let byTagNameElements = $("p"); 
+let wrapperAndInnerWrapper = $(".wrapper,.innerWrapper");
+let firstParagraph = $("p:first"); 
+let lastParagraph = $("p:last"); 
+let firstChildHeaders = $("h3:first-child");
+let lastChildParagraphs = $("p:last-child"); 
+let secondChildParagraphs = $("p:nth-child(2)"); 
+
+// console.log(allElements);
+console.log(byIdElement);
+console.log(byClassElements);
+console.log(byTagNameElements);
+console.log(wrapperAndInnerWrapper);
+console.log(firstParagraph);
+console.log(lastParagraph);
+console.log(firstChildHeaders);
+console.log(lastChildParagraphs);
+console.log(secondChildParagraphs);
