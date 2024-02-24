@@ -42,22 +42,24 @@
 //     Domaci 2
 
 
-// let book = {
+let book = {
 
-//     title: prompt("Unesite naslov knjige:"),
-//     author: prompt("Unesite ime autora:"),
-//     readingStatus: confirm("Da li ste već pročitali knjigu?"), 
-//     info: function() {
+    title: prompt("Unesite naslov knjige:"),
+    author: prompt("Unesite ime autora:"),
+    readingStatus: confirm("Da li ste već pročitali knjigu?"), 
+    info: function() {
 
-//         if (this.readingStatus) {
-//             return `Već ste pročitali '${this.title}' od strane ${this.author}.`;
-//         } else {
-//             return `Još uvek treba da pročitate '${this.title}' od strane ${this.author}.`;
-//         }
-//     }
-// };
+        if (this.readingStatus) {
+            return `Već ste pročitali '${this.title}' od strane ${this.author}.`;
+        } else {
+            return `Još uvek treba da pročitate '${this.title}' od strane ${this.author}.`;
+        }
+    }
+};
 
-// console.log(book.info());
+console.log(book.info());
+
+
 
 
 
@@ -74,29 +76,29 @@
 
 
 
-let students = [];
+// let students = [];
 
-function Student (firstName, lastName, age){
-    this.firstName = firstName;
-    this.lastName = lastName;
-    this.age = age;
-}
+// function Student (firstName, lastName, age){
+//     this.firstName = firstName;
+//     this.lastName = lastName;
+//     this.age = age;
+// }
 
-document.getElementById("studentForm").addEventListener("submit", function(myFunction){
-    myFunction.preventDefault();
+// document.getElementById("studentForm").addEventListener("submit", function(myFunction){
+//     myFunction.preventDefault();
 
-    let firstName = document.getElementById("firstName").value;
-   let lastName = document.getElementById("lastName").value;
-   let age = parseInt(document.getElementById("age").value);
+//     let firstName = document.getElementById("firstName").value;
+//    let lastName = document.getElementById("lastName").value;
+//    let age = parseInt(document.getElementById("age").value);
 
-   let student = new Student (firstName, lastName, age);
+//    let student = new Student (firstName, lastName, age);
 
-   students.push(student);
+//    students.push(student);
 
-   console.log(students);
-   document.getElementById("studentForm").reset();
+//    console.log(students);
+//    document.getElementById("studentForm").reset();
 
-})
+// })
 
 
 

@@ -106,10 +106,54 @@
 // });
 // });
 
-$(document).ready(function(){
-let pera = $("#secondWrapper").find("p").get();
+
+
+
+// $(document).ready(function(){
+// let pera = $("#secondWrapper").find("p").get();
  
-pera.forEach(function(element, index){
-    $(element).css("color", "red");
-})
+// pera.forEach(function(element, index){
+//     $(element).css("color", "red");
+// })
+// });
+
+
+
+//............. zadatak 4
+
+
+
+
+$(document).ready(function(){
+
+    let button = $("#btn");
+    let div2 = $("#div2");
+
+    button.click(function(){
+
+    let num1 = parseFloat($("#put1").val());
+    let num2 = parseFloat($("#put2").val());   // ....   parseFloat()    ....   pretvara string u broj sa decimalom ako je unesena
+    let num3 = parseFloat($("#put3").val());           
+    
+     if (isNaN(num1) || isNaN(num2) || isNaN(num3)) {
+            console.log("Molimo vas unesite brojeve u sva polja.");
+            return;
+        }
+
+    let average = (num1 + num2 + num3) / 3;
+    
+    if(average >= 10){
+        div2.css("color", "green");
+    } else {
+        div2.css("color", "red");
+    }
+    
+    div2.html(`<h1> ${average.toFixed(2)} </h1>`);
+
+    $("#put1").val('');
+    $("#put2").val('');
+    $("#put3").val('');
+
 });
+});
+
