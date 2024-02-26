@@ -69,7 +69,7 @@
 //     default:
 //     console.log ("Unesi ime neke boje...")
 //     break;
-// // }
+// }
 
 
 // var voyage = prompt ("Gde zelite da putujete?");
