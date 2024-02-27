@@ -1,6 +1,13 @@
 //  DOMACI
 
 
+
+
+
+//    VAZNOOOOOOOOO !!!!!!!!!!!!!!!!!!!!!!!!!!11
+
+
+
 function tabela(){
 
     let rows = parseInt(document.getElementById("rows").value);
@@ -22,28 +29,28 @@ function tabela(){
 
 
 
-// function createTable() {
+function createTable() {
 
-//     let rows = parseInt(document.getElementById("rows").value);
-//     let cols = parseInt(document.getElementById("cols").value);
+    let rows = parseInt(document.getElementById("rows").value);
+    let cols = parseInt(document.getElementById("cols").value);
     
 
-//     let table = document.createElement("table");
+    let table = document.createElement("table");
     
 
-//     for (let i = 1; i <= rows; i++) {
-//       let row = table.insertRow();
-//       for (let j = 1; j <= cols; j++) {
-//         let cell = row.insertCell();
-//         cell.textContent = "Row-" + i + " Column-" + j;
-//       }
-//     }
+    for (let i = 1; i <= rows; i++) {
+      let row = table.insertRow();
+      for (let j = 1; j <= cols; j++) {
+        let cell = row.insertCell();
+        cell.textContent = "Row-" + i + " Column-" + j;
+      }
+    }
     
 
-//     let tableContainer = document.getElementById("tableContainer");
-//     tableContainer.innerHTML = "";
-//     tableContainer.appendChild(table);
-//   }
+    let tableContainer = document.getElementById("tableContainer");
+    tableContainer.innerHTML = "";
+    tableContainer.appendChild(table);
+  }
 
 
 
