@@ -191,9 +191,7 @@ const mainTable = document.getElementById("mainTable");
 
 button.addEventListener("click", function(){
     starWars();
-   button.removeEventListener("click", starWars);      // da sam u HTML stavio onclick, sta se menja u js? treba li jedna velika funkcija za sve ostale?
-   button.addEventListener("click", starWars2) 
-
+    starWars2();
 });  
 
 
@@ -215,13 +213,15 @@ function starWars2() {
          return response.json()
     })
     .then(function(data){
+        mainTable.innerHTML = "";
         const otherPlanets = data.results;
         contentTable(otherPlanets);
     })
 }
 
 function contentTable (planets){
-    let arrayNames = ["Planet Name", "Population", "Climate", "Gravity"];
+    // mainTable.innerHTML = "";
+        let arrayNames = ["Planet Name", "Population", "Climate", "Gravity"];
     const headerTr = document.createElement("tr");
 
     arrayNames.forEach(function(names){
