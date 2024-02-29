@@ -55,7 +55,7 @@
 
 // function getRandomNumber() {
 //   // 0 - 255
-//   return Math.floor(Math.random() * 256);                                                   da odradimo opet ???
+//   return Math.floor(Math.random() * 256);                                                 
 // }
 
 // function getColor() {
@@ -84,47 +84,48 @@
 
 
 
-const generateBtn = document.getElementById("generateBtn");
-const colorInput = document.getElementById("colorInput");
-const fontSizeInput = document.getElementById("fontSizeInput");
-const itemsInput = document.getElementById("itemsInput");
 
-function onGenerate() {
-  const list = document.createElement("ul");
-  const itemsArray = itemsInput.value.split(","); // ['aa', 'bbb', 'ccc'];
-  const color = colorInput.value;
-  const fs = fontSizeInput.value;
-  let isFormValid = true;
+// const generateBtn = document.getElementById("generateBtn");
+// const colorInput = document.getElementById("colorInput");
+// const fontSizeInput = document.getElementById("fontSizeInput");
+// const itemsInput = document.getElementById("itemsInput");
 
-  if (!colorInput.value) {
-    console.warn("Color is required");
-    isFormValid = false;
-  }
-  if (!fontSizeInput.value || isNaN(fontSizeInput.value)) {
-    console.warn("font size is required and must be a number");
-    isFormValid = false;
-  }
-  if (!itemsInput.value) {
-    console.warn("items are required");
-    isFormValid = false;
-  }
+// function onGenerate() {
+//   const list = document.createElement("ul");
+//   const itemsArray = itemsInput.value.split(","); // ['aa', 'bbb', 'ccc'];
+//   const color = colorInput.value;
+//   const fs = fontSizeInput.value;
+//   let isFormValid = true;
 
-  if (isFormValid) {
-    itemsArray.forEach(function (element) {
-      const li = document.createElement("li");
-      li.style.color = color;
-      li.style.fontSize = `${fs}px`;
-      li.innerText = element;
-      list.appendChild(li);
-    });
+//   if (!colorInput.value) {
+//     console.warn("Color is required");
+//     isFormValid = false;
+//   }
+//   if (!fontSizeInput.value || isNaN(fontSizeInput.value)) {
+//     console.warn("font size is required and must be a number");
+//     isFormValid = false;
+//   }
+//   if (!itemsInput.value) {
+//     console.warn("items are required");
+//     isFormValid = false;
+//   }
 
-    document.body.appendChild(list);
+//   if (isFormValid) {
+//     itemsArray.forEach(function (element) {
+//       const li = document.createElement("li");
+//       li.style.color = color;
+//       li.style.fontSize = `${fs}px`;
+//       li.innerText = element;
+//       list.appendChild(li);
+//     });
 
-    colorInput.value = "";
-    fontSizeInput.value = "";
-    itemsInput.value = "";
-  }
-}
+//     document.body.appendChild(list);
+
+//     colorInput.value = "";
+//     fontSizeInput.value = "";
+//     itemsInput.value = "";
+//   }
+// }
 
 // function onGenerate2() {
 //   let list = '<ul>';
