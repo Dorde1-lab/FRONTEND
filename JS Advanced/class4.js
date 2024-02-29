@@ -1,4 +1,4 @@
-// //  tri nacina pisanja funkcije arrow
+//  tri nacina pisanja funkcije arrow
 
 
 // function validateEmail(email){
@@ -17,6 +17,7 @@
 // console.log("validateEmail", validateEmail(myEmail));
 // console.log("validateEmail2", validateEmail2(myEmail));
 // console.log("validateEmail3", validateEmail3(myEmail));
+
 
 
 
@@ -186,78 +187,264 @@
 // witout arrow
 
 
-const button = document.getElementById("btn");
-const mainTable = document.getElementById("mainTable");
+// const button = document.getElementById("btn");
+// const mainTable = document.getElementById("mainTable");
+// let page = 1;
 
-button.addEventListener("click", function(){
-    starWars();
-    starWars2();
-});  
+// button.addEventListener("click", function(){
+//     starWars();
+
+//     const newButton = document.createElement("button");
+//     newButton.innerText = "Next 10";
+//     newButton.addEventListener("click", starWars2)
+
+// document.body.appendChild(newButton);
+// });  
 
 
-function starWars() {
-    fetch("https://swapi.dev/api/planets/?page=1")
-    .then(function(response){
-        return response.json() 
-    })
-    .then(function(data){
-        const planets = data.results;                     //  da li je data dostupna svuda van funkcije???
-        contentTable (planets);
-    })
 
-}
 
-function starWars2() {
-    fetch("https://swapi.dev/api/planets/?page=2")
-    .then(function(response){
-         return response.json()
-    })
-    .then(function(data){
-        mainTable.innerHTML = "";
-        const otherPlanets = data.results;
-        contentTable(otherPlanets);
-    })
-}
+// function starWars() {
+//     fetch("https://swapi.dev/api/planets/?page=1")
+//     .then(function(response){
+//         return response.json(); 
+//     })
+//     .then(function(data){
+//         const planets = data.results;                    
+//         contentTable (planets);
+//     })
 
-function contentTable (planets){
-    // mainTable.innerHTML = "";
-        let arrayNames = ["Planet Name", "Population", "Climate", "Gravity"];
-    const headerTr = document.createElement("tr");
+// }
 
-    arrayNames.forEach(function(names){
-        const cell = document.createElement("th");
-        cell.innerText = names;
+// function starWars2() {
+//     page++                                                            //  pogledaj ovo page++ i sam url je izmenjen
+//     console.log("page", page);
+//     fetch("https://swapi.dev/api/planets/?page=" + page)
+//     .then(function(response){
+//          return response.json()
+//     })
+//     .then(function(data){
+//         const otherPlanets = data.results;
+//         contentTable(otherPlanets);
+//     })
+// }
 
-        headerTr.appendChild(cell);
-        });
-        mainTable.appendChild(headerTr);
+// function contentTable (planets){
+//     mainTable.innerHTML = "";
+//         let arrayNames = ["Planet Name", "Population", "Climate", "Gravity"];
+//     const headerTr = document.createElement("tr");
 
-       
+//     arrayNames.forEach(function(names){
+//         const cell = document.createElement("th");
+//         cell.innerText = names;
+//         headerTr.appendChild(cell);
 
-    const arrayValues = ["name", "population", "climate", "gravity"];
+//         });
+//         mainTable.appendChild(headerTr);
 
-    planets.slice(0, 10).forEach(function(planet){
-        const headerValues = document.createElement("tr");
+  
+
+//     const arrayValues = ["name", "population", "climate", "gravity"];
+
+//     planets.forEach(function(planet){                                                    //    razmisli opet zasto planets.forEach
+//         const headerValues = document.createElement("tr");
  
-        arrayValues.forEach(function(values){
-         const cell = document.createElement("td");
-         cell.innerText = planet[values];                                                //  pogledati forEach planet[values]
+//         arrayValues.forEach(function(values){
+//          const cell = document.createElement("td");
+//          cell.innerText = planet[values];                                                //  Zasto planet[values]
 
-         headerValues.appendChild(cell);
-    });
+//          headerValues.appendChild(cell);
+//     });
 
-    mainTable.appendChild(headerValues);
+//     mainTable.appendChild(headerValues);
 
-    });
-    button.innerHTML = ("Next 10");
-};
+//     });
+// };
 
 
-    // function newButton1(){
-    //     button.innerText = "Next 10"; 
-    // }
+//  with arrow function
 
-    // function newButton2(){
-    //     button.innerHTML = "";
-    //     button.innerText = "Previous 10";                            // prvo ucita button a onda tabelu 3 ????
-    // }
+
+// const button = document.getElementById("btn");
+// const mainTable = document.getElementById("mainTable");
+// let page = 1;
+
+// button.addEventListener("click", () =>{
+//   starWars();
+
+//   const newButton = document.createElement("button");
+//   newButton.innerText = "Next 10";
+//   newButton.addEventListener("click", starWars2);
+
+//   document.body.appendChild(newButton);
+// });
+
+// const starWars = () => {
+//   fetch("https://swapi.dev/api/planets/?page=1")
+//     .then( response => response.json())
+
+//     .then(data => {
+//       const planets = data.results;
+//       contentTable(planets);
+//     });
+// }
+
+// const starWars2 = () => {
+//   page++;
+// //   console.log("page", page);
+//   fetch("https://swapi.dev/api/planets/?page=" + page)
+//     .then(response => response.json())
+
+//     .then( data => {
+//       const otherPlanets = data.results;
+//       contentTable(otherPlanets);
+//     });
+// }
+
+// const contentTable = (planets) => {
+//   mainTable.innerHTML = "";
+//   let arrayNames = ["Planet Name", "Population", "Climate", "Gravity"];
+//   const headerTr = document.createElement("tr");
+
+//   arrayNames.forEach( names => {
+//     const cell = document.createElement("th");
+//     cell.innerText = names;
+
+//     headerTr.appendChild(cell);
+//   });
+//   mainTable.appendChild(headerTr);
+
+//   const arrayValues = ["name", "population", "climate", "gravity"];
+
+//   planets.forEach( planet => {
+//     const headerValues = document.createElement("tr");
+
+//     arrayValues.forEach( values => {
+//       const cell = document.createElement("td");
+//       cell.innerText = planet[values]; //  pogledati forEach planet[values]
+
+//       headerValues.appendChild(cell);
+//     });
+
+//     mainTable.appendChild(headerValues);
+//   });
+// }
+
+
+
+
+// ..........................................................
+
+
+
+// const addBtn = document.getElementById("addBtn");
+// const namesArray = [];
+
+// function onAddClicked() {
+//   const newName = prompt("Enter a name");
+
+//   namesArray.push(newName);
+//   console.log("names array => ", namesArray);
+// }
+// console.log("niz => ", namesArray);//[]
+
+// addBtn.addEventListener("click", onAddClicked);
+
+
+
+
+// .......................................!!!!!!!!!!!!!!!!!!
+
+// function getFullName(fName, lName) {
+//       // parameters
+//       return `${fName} ${lName}`;
+//     }
+    
+    
+//     const fullName = getFullName("Milica", "Dj."); // arguments, tu pozivano funkciju u varijabli
+//     console.log(fullName);
+
+//  function displayStudentInfo(student) {
+//       console.log("Student", getFullName(student.firstName, student.lastName));
+//       console.log("Age", student.age);
+//     }
+    
+//     console.log(getFullName("Tamara", "D."));
+    
+
+// const obj = {
+//   firstName: "Aida",
+//   lastName: "P",
+//   age: 18,
+// };
+// displayStudentInfo(obj);
+
+
+
+
+// ..................................
+
+
+// anonymous functions
+// const getFullName = function (fName, lName) {        // vrednost ove varijable je zapravo ova anonimna funkcija
+//   return `${fName} ${lName}`;
+// };
+
+// getFullName("aaa", "vbbb");
+
+// addBtn.addEventListener("click", function () {
+//   console.log("clicked on button");
+// });
+
+
+// ..................................
+
+
+// anonymous arrow functions
+
+// const getSum = (num1, num2) => {
+//   console.log("Sum", num1 + num2);
+// };
+
+// addBtn.addEventListener("click", () => {
+//   console.log("clicked!!");
+// });
+
+// getSum(3, 4);
+
+
+
+
+
+
+// exercise 1
+
+
+
+// const countDigits = (number) => Math.abs(number).toString().length;
+
+// const isEvenOrOdd = (number) => (number % 2 === 0 ? "Even" : "Odd");
+
+// const isPositiveOrNegative = (number) => {
+//   // 0
+//   if (number > 0) {
+//     return "Positive";
+//   }                               
+
+//   if (number < 0) {
+//     return "Negative";
+//   }
+//   return "Zero";
+// };
+
+// const getNumberStats = (number) => {
+//   const numDigits = countDigits(number);
+//   const evenOrOdd = isEvenOrOdd(number);                                                  //  U varijabli mozes da pozoves funkciju!!!!!
+//   const posOrNeg = isPositiveOrNegative(number);
+
+//   console.log(`${numDigits} Digits, ${evenOrOdd}, ${posOrNeg}`);
+// };
+
+// getNumberStats(-25);
+
+

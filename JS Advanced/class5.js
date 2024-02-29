@@ -17,11 +17,13 @@ function students(){
         myFunction(student)
     })
 }
+students()
 
 function myFunction(student){
     const grade = student.filter(function(element){
         if(element.averageGrade > 3){
-            console.log("grade", grade);
-        }
+          return true;
+        } 
     } )
+    console.log(grade);
 }
