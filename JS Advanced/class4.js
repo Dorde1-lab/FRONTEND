@@ -1,22 +1,22 @@
 //  tri nacina pisanja funkcije arrow
 
 
-// function validateEmail(email){
-//     return email.includes("@");
-// }
+function validateEmail(email){
+    return email.includes("@");
+}
 
-// const validateEmail2 = (email) => {
-//     return email.includes("@");
-// }
+const validateEmail2 = (email) => {
+    return email.includes("@");
+}
 
-// const validateEmail3 = (email) => email.includes("@");
+const validateEmail3 = (email) => email.includes("@");
 
 
-// const myEmail = "perapera@yahoo.com";
+const myEmail = "perapera@yahoo.com";
 
-// console.log("validateEmail", validateEmail(myEmail));
-// console.log("validateEmail2", validateEmail2(myEmail));
-// console.log("validateEmail3", validateEmail3(myEmail));
+console.log("validateEmail", validateEmail(myEmail));
+console.log("validateEmail2", validateEmail2(myEmail));
+console.log("validateEmail3", validateEmail3(myEmail));
 
 
 
@@ -265,70 +265,70 @@
 //  with arrow function
 
 
-// const button = document.getElementById("btn");
-// const mainTable = document.getElementById("mainTable");
-// let page = 1;
+const button = document.getElementById("btn");
+const mainTable = document.getElementById("mainTable");
+let page = 1;
 
-// button.addEventListener("click", () =>{
-//   starWars();
+button.addEventListener("click", () =>{
+  starWars();
 
-//   const newButton = document.createElement("button");
-//   newButton.innerText = "Next 10";
-//   newButton.addEventListener("click", starWars2);
+  const newButton = document.createElement("button");
+  newButton.innerText = "Next 10";
+  newButton.addEventListener("click", starWars2);
 
-//   document.body.appendChild(newButton);
-// });
+  document.body.appendChild(newButton);
+});
 
-// const starWars = () => {
-//   fetch("https://swapi.dev/api/planets/?page=1")
-//     .then( response => response.json())
+const starWars = () => {
+  fetch("https://swapi.dev/api/planets/?page=1")
+    .then( response => response.json())
 
-//     .then(data => {
-//       const planets = data.results;
-//       contentTable(planets);
-//     });
-// }
+    .then(data => {
+      const planets = data.results;
+      contentTable(planets);
+    });
+}
 
-// const starWars2 = () => {
-//   page++;
-// //   console.log("page", page);
-//   fetch("https://swapi.dev/api/planets/?page=" + page)
-//     .then(response => response.json())
+const starWars2 = () => {
+  page++;
+//   console.log("page", page);
+  fetch("https://swapi.dev/api/planets/?page=" + page)                 //  obrati paznju na page
+    .then(response => response.json())
 
-//     .then( data => {
-//       const otherPlanets = data.results;
-//       contentTable(otherPlanets);
-//     });
-// }
+    .then( data => {
+      const otherPlanets = data.results;
+      contentTable(otherPlanets);
+    });
+}
 
-// const contentTable = (planets) => {
-//   mainTable.innerHTML = "";
-//   let arrayNames = ["Planet Name", "Population", "Climate", "Gravity"];
-//   const headerTr = document.createElement("tr");
+const contentTable = (planets) => {
+  mainTable.innerHTML = "";
+  let arrayNames = ["Planet Name", "Population", "Climate", "Gravity"];
+  const headerTr = document.createElement("tr");
 
-//   arrayNames.forEach( names => {
-//     const cell = document.createElement("th");
-//     cell.innerText = names;
+  arrayNames.forEach( names => {
+    const cell = document.createElement("th");
+    cell.innerText = names;
 
-//     headerTr.appendChild(cell);
-//   });
-//   mainTable.appendChild(headerTr);
+    headerTr.appendChild(cell);
+  });
+  mainTable.appendChild(headerTr);
 
-//   const arrayValues = ["name", "population", "climate", "gravity"];
+  const arrayValues = ["name", "population", "climate", "gravity"];
 
-//   planets.forEach( planet => {
-//     const headerValues = document.createElement("tr");
+  planets.forEach( planet => {
+    const headerValues = document.createElement("tr");
 
-//     arrayValues.forEach( values => {
-//       const cell = document.createElement("td");
-//       cell.innerText = planet[values]; //  pogledati forEach planet[values]
+    arrayValues.forEach( values => {
+      const cell = document.createElement("td");
+      cell.innerText = planet[values]; //  pogledati forEach planet[values]
 
-//       headerValues.appendChild(cell);
-//     });
+      headerValues.appendChild(cell);
+    });
 
-//     mainTable.appendChild(headerValues);
-//   });
-// }
+    mainTable.appendChild(headerValues);
+  });
+}
 
 
 
@@ -355,29 +355,29 @@
 
 // .......................................!!!!!!!!!!!!!!!!!!
 
-// function getFullName(fName, lName) {
-//       // parameters
-//       return `${fName} ${lName}`;
-//     }
+function getFullName(fName, lName) {
+      // parameters
+      return `${fName} ${lName}`;
+    }
     
     
-//     const fullName = getFullName("Milica", "Dj."); // arguments, tu pozivano funkciju u varijabli
-//     console.log(fullName);
+    const fullName = getFullName("Milica", "Dj.");                  // arguments, tu pozivano funkciju u varijabli
+    console.log(fullName);
 
-//  function displayStudentInfo(student) {
-//       console.log("Student", getFullName(student.firstName, student.lastName));
-//       console.log("Age", student.age);
-//     }
+ function displayStudentInfo(student) {
+      console.log("Student", getFullName(student.firstName, student.lastName));
+      console.log("Age", student.age);
+    }
     
-//     console.log(getFullName("Tamara", "D."));
+    console.log(getFullName("Tamara", "D."));
     
 
-// const obj = {
-//   firstName: "Aida",
-//   lastName: "P",
-//   age: 18,
-// };
-// displayStudentInfo(obj);
+const obj = {
+  firstName: "Aida",
+  lastName: "P",
+  age: 18,
+};
+displayStudentInfo(obj);
 
 
 
@@ -386,14 +386,15 @@
 
 
 // anonymous functions
+
 // const getFullName = function (fName, lName) {        // vrednost ove varijable je zapravo ova anonimna funkcija
 //   return `${fName} ${lName}`;
 // };
 
 // getFullName("aaa", "vbbb");
 
-// addBtn.addEventListener("click", function () {
-//   console.log("clicked on button");
+// addBtn.addEventListener("click", function () {         // kako na ovaj nacin znamo da pozivamo ovu gore funkciju ??
+//   console.log("clicked on button");  
 // });
 
 
@@ -446,5 +447,6 @@
 // };
 
 // getNumberStats(-25);
+
 
 
