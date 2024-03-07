@@ -55,7 +55,7 @@
 
 
 
-// .........................................!!!!!!!!1
+// .........................................!!!!!!!!
 
 
 // function getLongestString() {
@@ -234,22 +234,28 @@
 
 
 
- const students = () => {
-    fetch("https://raw.githubusercontent.com/sedc-codecademy/skwd9-04-ajs/main/Samples/students_v2.json")
-    .then(response => response.json())
-    .then(students => {
-            const ex1 = students.filter(grades => grades.averageGrade > 3);
-            console.log(ex1);
-            const ex2 = students.filter(nameAndGrade => nameAndGrade.gender === "Female" && nameAndGrade.averageGrade === 5)
-            console.log(ex2);   
-            const ex3 = students.filter(fullName => fullName.gender === "male" && fullName.city === "Skopje" && fullName.age > 18)
-            console.log(ex3);
+//  const students = () => {
+//     fetch("https://raw.githubusercontent.com/sedc-codecademy/skwd9-04-ajs/main/Samples/students_v2.json")
+//     .then(response => response.json())
+//     .then(students => {
+//             const ex1 = students.filter(grades => grades.averageGrade > 3);
+//                         console.log(ex1);
+//             const ex2 = students.filter(nameAndGrade => nameAndGrade.gender === "Female" && nameAndGrade.averageGrade === 5);
+//                         console.log(ex2);   
+//             const ex3 = students
+//                         .filter(male => male.age > 18 && male.gender === "Male" && male.city === "Skopje")
+//                         .map(male => `${male.firstName} ${male.lastName}`);
+//                         console.log(ex3);
+//             const ex4 = students
+//                         .filter(female => female.age > 24 && female.gender === "Female")
+//                         .map(female => female.averageGrade);
+//                         console.log(ex4);
+//            const ex5 = students.filter (average => average.gender === "Male" && average.averageGrade > 2 && 
+//                        average.firstName.startsWith("B") || average.lastName.startsWith("B"))
+//                        console.log(ex5);
             
-    })
-
-    }
-
-    students();
+//     })}
+//     students();
 
 
 

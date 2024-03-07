@@ -1,22 +1,22 @@
 //  tri nacina pisanja funkcije arrow
 
 
-function validateEmail(email){
-    return email.includes("@");
-}
+// function validateEmail(email){
+//     return email.includes("@");
+// }
 
-const validateEmail2 = (email) => {
-    return email.includes("@");
-}
+// const validateEmail2 = (email) => {
+//     return email.includes("@");
+// }
 
-const validateEmail3 = (email) => email.includes("@");
+// const validateEmail3 = (email) => email.includes("@");
 
 
-const myEmail = "perapera@yahoo.com";
+// const myEmail = "perapera@yahoo.com";
 
-console.log("validateEmail", validateEmail(myEmail));
-console.log("validateEmail2", validateEmail2(myEmail));
-console.log("validateEmail3", validateEmail3(myEmail));
+// console.log("validateEmail", validateEmail(myEmail));
+// console.log("validateEmail2", validateEmail2(myEmail));
+// console.log("validateEmail3", validateEmail3(myEmail));
 
 
 
@@ -41,7 +41,9 @@ console.log("validateEmail3", validateEmail3(myEmail));
 // console.log("Digits:",  digitsNumber(number1))
 
 
-// // Da uzme broj iz parametra funkcije i da prikaze da li je even ili odd.
+
+
+// Da uzme broj iz parametra funkcije i da prikaze da li je even ili odd.
 
 
 
@@ -49,6 +51,8 @@ console.log("validateEmail3", validateEmail3(myEmail));
 //    return number % 2 === 0 ? "even" : "odd";                    // ternarni prikaz uslova
 // }
 // console.log(numbers(number1))
+
+
 
 
 // // Da vrati broj iz parametra ako je pozitivan ili negativan
@@ -62,6 +66,8 @@ console.log("validateEmail3", validateEmail3(myEmail));
 // }
 
 // console.log(typeNumbers(number1));
+
+
 
 
 // // glavna unkcija koja prikazuje sve ove gore i poziva ih.
@@ -79,7 +85,7 @@ console.log("validateEmail3", validateEmail3(myEmail));
 
 
 
-// vezba 2 sa html - om.
+// vezba 2 sa html - om.  !!!!!!!!!!!!!!!!
 
 
 // const inputColor = document.getElementById("color");
@@ -109,10 +115,7 @@ console.log("validateEmail3", validateEmail3(myEmail));
     
 // }
 
-
-
-
-
+// drugi BOLJI nacin.....
 
 
 //   const header = document.getElementById("h1");
@@ -265,70 +268,70 @@ console.log("validateEmail3", validateEmail3(myEmail));
 //  with arrow function
 
 
-const button = document.getElementById("btn");
-const mainTable = document.getElementById("mainTable");
-let page = 1;
+// const button = document.getElementById("btn");
+// const mainTable = document.getElementById("mainTable");
+// let page = 1;
 
-button.addEventListener("click", () =>{
-  starWars();
+// button.addEventListener("click", () =>{
+//   starWars();
 
-  const newButton = document.createElement("button");
-  newButton.innerText = "Next 10";
-  newButton.addEventListener("click", starWars2);
+//   const newButton = document.createElement("button");
+//   newButton.innerText = "Next 10";
+//   newButton.addEventListener("click", starWars2);
 
-  document.body.appendChild(newButton);
-});
+//   document.body.appendChild(newButton);
+// });
 
-const starWars = () => {
-  fetch("https://swapi.dev/api/planets/?page=1")
-    .then( response => response.json())
+// const starWars = () => {
+//   fetch("https://swapi.dev/api/planets/?page=1")
+//     .then( response => response.json())
 
-    .then(data => {
-      const planets = data.results;
-      contentTable(planets);
-    });
-}
+//     .then(data => {
+//       const planets = data.results;
+//       contentTable(planets);
+//     });
+// }
 
-const starWars2 = () => {
-  page++;
-//   console.log("page", page);
-  fetch("https://swapi.dev/api/planets/?page=" + page)                 //  obrati paznju na page
-    .then(response => response.json())
+// const starWars2 = () => {
+//   page++;
+// //   console.log("page", page);
+//   fetch("https://swapi.dev/api/planets/?page=" + page)                 //  obrati paznju na page
+//     .then(response => response.json())
 
-    .then( data => {
-      const otherPlanets = data.results;
-      contentTable(otherPlanets);
-    });
-}
+//     .then( data => {
+//       const otherPlanets = data.results;
+//       contentTable(otherPlanets);
+//     });
+// }
 
-const contentTable = (planets) => {
-  mainTable.innerHTML = "";
-  let arrayNames = ["Planet Name", "Population", "Climate", "Gravity"];
-  const headerTr = document.createElement("tr");
+// const contentTable = (planets) => {
+//   mainTable.innerHTML = "";
+//   let arrayNames = ["Planet Name", "Population", "Climate", "Gravity"];
+//   const headerTr = document.createElement("tr");
 
-  arrayNames.forEach( names => {
-    const cell = document.createElement("th");
-    cell.innerText = names;
+//   arrayNames.forEach( names => {
+//     const cell = document.createElement("th");
+//     cell.innerText = names;
 
-    headerTr.appendChild(cell);
-  });
-  mainTable.appendChild(headerTr);
+//     headerTr.appendChild(cell);
+//   });
+//   mainTable.appendChild(headerTr);
 
-  const arrayValues = ["name", "population", "climate", "gravity"];
+//   const arrayValues = ["name", "population", "climate", "gravity"];
 
-  planets.forEach( planet => {
-    const headerValues = document.createElement("tr");
+//   planets.forEach( planet => {
+//     const headerValues = document.createElement("tr");
 
-    arrayValues.forEach( values => {
-      const cell = document.createElement("td");
-      cell.innerText = planet[values]; //  pogledati forEach planet[values]
+//     arrayValues.forEach( values => {
+//       const cell = document.createElement("td");
+//       cell.innerText = planet[values]; //  pogledati forEach planet[values]
 
-      headerValues.appendChild(cell);
-    });
+//       headerValues.appendChild(cell);
+//     });
 
-    mainTable.appendChild(headerValues);
-  });
-}
+//     mainTable.appendChild(headerValues);
+//   });
+// }
 
 
 
@@ -355,29 +358,29 @@ const contentTable = (planets) => {
 
 // .......................................!!!!!!!!!!!!!!!!!!
 
-function getFullName(fName, lName) {
-      // parameters
-      return `${fName} ${lName}`;
-    }
+// function getFullName(fName, lName) {
+//       // parameters
+//       return `${fName} ${lName}`;
+//     }
     
     
-    const fullName = getFullName("Milica", "Dj.");                  // arguments, tu pozivano funkciju u varijabli
-    console.log(fullName);
+//     const fullName = getFullName("Milica", "Dj.");                  // arguments, tu pozivano funkciju u varijabli
+//     console.log(fullName);
 
- function displayStudentInfo(student) {
-      console.log("Student", getFullName(student.firstName, student.lastName));
-      console.log("Age", student.age);
-    }
+//  function displayStudentInfo(student) {
+//       console.log("Student", getFullName(student.firstName, student.lastName));
+//       console.log("Age", student.age);
+//     }
     
-    console.log(getFullName("Tamara", "D."));
+//     console.log(getFullName("Tamara", "D."));
     
 
-const obj = {
-  firstName: "Aida",
-  lastName: "P",
-  age: 18,
-};
-displayStudentInfo(obj);
+// const obj = {
+//   firstName: "Aida",
+//   lastName: "P",
+//   age: 18,
+// };
+// displayStudentInfo(obj);
 
 
 
@@ -385,7 +388,9 @@ displayStudentInfo(obj);
 // ..................................
 
 
-// anonymous functions
+// anonymous functions.....
+
+
 
 // const getFullName = function (fName, lName) {        // vrednost ove varijable je zapravo ova anonimna funkcija
 //   return `${fName} ${lName}`;
@@ -418,7 +423,7 @@ displayStudentInfo(obj);
 
 
 
-// exercise 1
+// exercise 1.....................................!!!!!!!!!!!!!!
 
 
 
@@ -450,3 +455,67 @@ displayStudentInfo(obj);
 
 
 
+
+
+
+
+
+
+
+
+
+// domaci vec uradjen sa ispravkama?
+
+
+
+// const button = document.getElementById("btn"); 
+// const mainTable = document.getElementById("mainTable");
+//  let page = 1;
+
+// const createNextTenButton = () => { 
+  
+//   const newButton = document.createElement("button");
+//  newButton.innerText = "Next 10"; 
+
+//  newButton.addEventListener("click", loadPlanets);
+//   document.body.appendChild(newButton); };
+
+// button.addEventListener("click", () => { loadPlanets();
+//    createNextTenButton(); });
+
+// const loadPlanets = () => { 
+
+//      fetch(`https://swapi.dev/api/planets/?page=${page}`) 
+//     .then((response) => response.json()) 
+//     .then((data) => { const planets = data.results;
+//                      page++; 
+//                      renderTable(planets);
+//     });
+//   }
+      
+//       // poziv ove funkcije sam stavila poslije renderiranja tabele, tako // da se prvo tabela ucita pa tek onda ispod pojavi button createNextTenButton(); }) .catch((err) => { console.error("Star wars api has failed", err); }); };
+// const renderTable = (planets) => { mainTable.innerHTML = "";
+
+// let arrayNames = ["Planet Name", "Population", "Climate", "Gravity"]; 
+// const headerTr = document.createElement("tr");
+
+// arrayNames.forEach((names) => {
+//    const cell = document.createElement("th"); 
+// cell.innerText = names;
+// headerTr.appendChild(cell); 
+// });
+
+// mainTable.appendChild(headerTr);
+
+
+// const arrayValues = ["name", "population", "climate", "gravity"];
+
+// planets.forEach((planet) => {
+//    const headerValues = document.createElement("tr");
+
+// arrayValues.forEach((values) => { 
+//   const cell = document.createElement("td"); 
+//   cell.innerText = planet[values]; // pogledati forEach planet[values]
+// headerValues.appendChild(cell); });
+
+// mainTable.appendChild(headerValues); }); }:

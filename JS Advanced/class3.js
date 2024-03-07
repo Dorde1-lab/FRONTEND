@@ -70,6 +70,10 @@
 // });
 
 
+
+
+
+
 // vezba 2 - se nalazi na html 3
  
 
@@ -90,6 +94,7 @@
 //         personNameHeading.innerHTML = data.name;                                     // interHTML a ne text  ?????
 
 //         document.body.innerHTML += `
+
 //         <table>
 //            <tr>
 //                 <th>Height</th>
@@ -105,7 +110,7 @@
 
 //            </tr>
 //         </table>
-//         `
+//         `;
 
 //     })
 //     .catch(function(){
@@ -120,7 +125,7 @@
 
 
 
-//  Drugi nacin:
+// //  Drugi nacin:
 
 // const sendRequestiButton = document.getElementById("sendRequest");
 // const personNameHeading = document.getElementById("personNameHeading");
@@ -263,75 +268,75 @@
 
 
 
-//  Treci nacin dinamicka tabela na drugi nacin:
+//  Treci nacin dinamicka tabela na drugi nacin............................................!!!!!!!!!!!!!!!
 
 
 
-const sendRequestiButton = document.getElementById("sendRequest");
-const personNameHeading = document.getElementById("personNameHeading");
+// const sendRequestiButton = document.getElementById("sendRequest");
+// const personNameHeading = document.getElementById("personNameHeading");
 
 
-function setHeading(value){
-    personNameHeading.innerText = value;
-}
+// function setHeading(value){
+//     personNameHeading.innerText = value;
+// }
 
 
-function generateTable (data) {
+// function generateTable (data) {
 
 
-    const table = document.createElement("table");
+//     const table = document.createElement("table");
 
 
-    const headingsTr = document.createElement("tr");   
-    //  ... da li sve atribute sa api a mozemo pretvoriti u niz??
+//     const headingsTr = document.createElement("tr");   
+//     //  ... da li sve atribute sa api a mozemo pretvoriti u niz??
 
-    const headings = ["height", "weight", "Eye color", "Hair color"];
+//     const headings = ["height", "weight", "Eye color", "Hair color"];
 
-    headings.forEach(heading => {
-         const cell = document.createElement("th");
-         cell.innerText = heading;
-         headingsTr.appendChild(cell);
-    });
+//     headings.forEach(heading => {
+//          const cell = document.createElement("th");
+//          cell.innerText = heading;
+//          headingsTr.appendChild(cell);
+//     });
 
-    table.appendChild(headingsTr);
-
-
-
-
-    const propertyNames = [ "height", "mass", "eye_color", "hair_color"];
-    const contentTr = document.createElement("tr");
-
-    propertyNames.forEach(property => {
-        console.log(property, data[property]);
-
-        const cell = document.createElement("td");
-        cell.innerText = data[property];
-        contentTr.appendChild(cell);
-});
-table.appendChild(contentTr);
-
-document.body.appendChild(table);
-}
+//     table.appendChild(headingsTr);
 
 
 
-function onSendRequestClicked(){
-    fetch("https://swapi.dev/api/people/1")
-    .then(function(response){
-        return response.json();
-    })
-    .then(function(data){
 
-        console.log(data);
-        setHeading(data.name);
-        generateTable(data);
-    })
-    .catch(function(){
-        console.error("Star Wars API has failed");
-    })
-}
+//     const propertyNames = [ "height", "mass", "eye_color", "hair_color"];
+//     const contentTr = document.createElement("tr");
 
-sendRequestiButton.addEventListener("click", onSendRequestClicked);
+//     propertyNames.forEach(property => {
+//         console.log(property, data[property]);
+
+//         const cell = document.createElement("td");
+//         cell.innerText = data[property];
+//         contentTr.appendChild(cell);
+// });
+// table.appendChild(contentTr);
+
+// document.body.appendChild(table);
+// }
+
+
+
+// function onSendRequestClicked(){
+//     fetch("https://swapi.dev/api/people/1")
+//     .then(function(response){
+//         return response.json();
+//     })
+//     .then(function(data){
+
+//         console.log(data);
+//         setHeading(data.name);
+//         generateTable(data);
+//     })
+//     .catch(function(){
+//         console.error("Star Wars API has failed");
+//     })
+// }
+
+// sendRequestiButton.addEventListener("click", onSendRequestClicked);
 
 
 
@@ -343,59 +348,58 @@ sendRequestiButton.addEventListener("click", onSendRequestClicked);
 
 
 
-// function dogImage (){
-//     fetch("https://dog.ceo/api/breeds/image/random")
-
-//     .then(function(response){
-//         return response.json();
-//     })
-//     .then(function(data){
-//         const imageUrl = data.message;
-
-//         createImage(imageUrl);
-//     })
-//     .catch(function(error){
-//         console.error(error);
-//     })
-// }
-
-// function createImage(imageUrl){
-//     const container = document.getElementById("container");
-//     container.innerHTML = "";
-
-//     const image = document.createElement("img");
-//     image.src = imageUrl;
-//     image.style.width = "300px";
-//     image.style.height = "auto"; 
-//     container.appendChild(image);
-// }
-
-// document.getElementById("sendRequest").addEventListener("click", dogImage);
-
-
-
-
-function dogImage(){
+function dogImage (){
     fetch("https://dog.ceo/api/breeds/image/random")
 
     .then(function(response){
         return response.json();
     })
-    .then (function(data){
+    .then(function(data){
         const imageUrl = data.message;
-        createImg (imageUrl)
+        createImage(imageUrl);
+    })
+    .catch(function(error){
+        console.error(error);
     })
 }
 
-function createImg (imageUrl){
+function createImage(imageUrl){
+    const container = document.getElementById("container");
+    container.innerHTML = "";
 
     const image = document.createElement("img");
     image.src = imageUrl;
     image.style.width = "300px";
-    image.style.height = "auto";
-
-    document.getElementById("container").appendChild(image);
+    image.style.height = "auto"; 
+    container.appendChild(image);
 }
 
-
 document.getElementById("sendRequest").addEventListener("click", dogImage);
+
+
+
+
+// function dogImage(){
+//     fetch("https://dog.ceo/api/breeds/image/random")
+
+//     .then(function(response){
+//         return response.json();
+//     })
+//     .then (function(data){
+//         const imageUrl = data.message;
+//         createImg (imageUrl)
+//     })
+// }
+
+// function createImg (imageUrl){
+
+//     const image = document.createElement("img");
+//     image.src = imageUrl;
+//     image.style.width = "300px";
+//     image.style.height = "auto";
+
+//     document.getElementById("container").appendChild(image);
+// }
+
+
+// document.getElementById("sendRequest").addEventListener("click", dogImage);
