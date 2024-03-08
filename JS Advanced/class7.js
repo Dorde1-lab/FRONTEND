@@ -1,4 +1,4 @@
-//  asynchronous functions
+//....................................  asynchronous functions
 
 
 
@@ -36,7 +36,7 @@
 
 
 
-//  promise chaining
+//.................................  promise chaining
 
 
 
@@ -78,7 +78,7 @@
 //         cleanGroceries()
 //           .then((res) => {
 //             console.log("response 2", res);
-//             resolve('Dinner is ready! Enjoy it!!!');         // zasto ovde ima resole a za prethodnu funkciju nema. zasto ovde resole i reject u pozivu druge funkcije
+//             resolve('Dinner is ready! Enjoy it!!!');     
 //           })
 //           .catch((err) => {
 //             console.error("error 2", err);
@@ -99,60 +99,10 @@
 // });
 
 
-const groceriesCount = 4;
-const canClean = true;
 
 
-function getGroceries() {
-    return new Promise ((resolve, reject) => {
-        if(groceriesCount > 0){
-            resolve(["paprika", "kupus", "pasulj"]);
-        } else {
-            reject("There is no groceries");
-        }
-    })
-}
 
-function cleanGroceries() {
-    return new Promise((resolve, reject) => {
-        if(canClean) {
-            resolve("cleaned");
-        } else {
-            reject("not cleaned");
-        }
-    })
-}
 
-function makeDinner() {
-    return new Promise((resolve, reject) => {
-        getGroceries()
-        .then((response1) => {
-        console.log(response1);
-            cleanGroceries()
-            .then((response2) => {
-            console.log(response2);
-                resolve("Rucak je spreman");    // zasto ovaj resolve ovde u pozivu druge funkcije?
-            })
-            .catch((error) => {
-            console.error(error);
-            reject(error);                      // zasto ovaj resorejectlve ovde u pozivu druge funkcije?
-            });
-        })
-        .catch((error) => {
-            console.log(error);
-            reject(error);
-        })
-    })
-}
-
-makeDinner()
-.then((response) => {
-    console.log (response);
-})
-.catch((error) => {
-    console.log(error);
-})
-// zasto ovaj resolve ovde u pozivu druge funkcije?
 //.................................... example 1 - instagram
 
 
@@ -163,7 +113,7 @@ makeDinner()
 //     console.log('Taking photo....');
 //     setTimeout(() => {
 //       if (memoryFull) {
-//         reject("Phone memorty is full!");
+//         reject("Phone memory is full!");
 //       } else {
 //         resolve("Photo saved.");
 //       }
@@ -186,7 +136,7 @@ makeDinner()
 // }
  
 // function addPhotoToIG() {
-//   takePhoto().then((response) => {
+//   takePhoto().then(() => {
 //       editPhoto().finally(() => {
 //         console.log('%cPhoto successfully added to IG!', 'color:pink; font-size:16px;');
 //       });
@@ -201,7 +151,7 @@ makeDinner()
 
 
 
-// example 2 - food
+//..................................................example 2 - food
 
 
 // const isSelected = false;
@@ -233,7 +183,7 @@ makeDinner()
 // function orderFood() {
 //     selectItemsFromMenu().then((response) => {
 //         confirmOrder().then((res) => {
-//             console.log("Order placed");
+//             console.log(res);
 //         })
 //         .catch((error) => {
 //             console.error("Order refused");
@@ -249,6 +199,7 @@ makeDinner()
 
 // async function orderFood2() {
 //     try {
+
 //         await selectItemsFromMenu();
 //         await confirmOrder ();
         
@@ -260,5 +211,10 @@ makeDinner()
 // }
 // orderFood2()
 
+
+
+
+
+//..................................................example 2 - food my try
 
 

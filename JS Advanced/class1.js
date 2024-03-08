@@ -345,32 +345,32 @@
 
 
 
-function Student(firstName, lastName) {
-//   undefined
-  firstName ? firstName : "---";
-  this.firstName = firstName || "---";
-  this.lastName = lastName || "---";
+// function Student(firstName, lastName) {
+// //   undefined
+//   firstName ? firstName : "---";
+//   this.firstName = firstName || "---";
+//   this.lastName = lastName || "---";
 
-  this.getFullName = function () {
-    console.log(`${this.firstName} ${this.lastName}`);
-  };
-}
+//   this.getFullName = function () {
+//     console.log(`${this.firstName} ${this.lastName}`);
+//   };
+// }
 
-const students = [new Student("Aida", "P"), new Student("Miroslav", "P")];
+// const students = [new Student("Aida", "P"), new Student("Miroslav", "P")];
 
-for (let element of students) {
-  element.getFullName();
-}
+// for (let element of students) {
+//   element.getFullName();
+// }
 
-students.forEach(function (el) {
-  console.log(el);
-});
+// students.forEach(function (el) {
+//   console.log(el);
+// });
 
-let numbers = [1, 2, 3, 4, 5];
+// let numbers = [1, 2, 3, 4, 5];
 
-numbers.forEach(function(number, index) {
-  console.log("Element na indeksu " + index + " je " + number);
-});
+// numbers.forEach(function(number, index) {
+//   console.log("Element na indeksu " + index + " je " + number);
+// });
 
 
 

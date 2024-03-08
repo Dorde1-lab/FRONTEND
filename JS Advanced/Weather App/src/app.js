@@ -46,3 +46,27 @@ fetch(`${baseUrl}/forecast?q=${city}&units=metric&APPID=${API_KEY}`)
 .then((res) => res.json())
 .then((res) => console.log(res))
 .catch((err) => console.error('API error', err));
+
+
+
+
+
+
+
+const addEventsOnLinks = function () {
+  for (let id = 0; id < navLinks.length; id++) {
+    const link = navLinks[id];
+    link.addEventListener("click", () => {
+      displayPage(id);
+    });
+  }
+};
+addEventsOnLinks();
+
+
+
+const displayPage = function (id) {
+  // console.log("clicked", id);
+  pageDivs.forEach((div) => (div.style.display = "none"));
+  pageDivs[id].style.display = "block";
+};
