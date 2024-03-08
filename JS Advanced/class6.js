@@ -28,8 +28,7 @@
 //   }
 // };
 
-// intervalId = setInterval(runTimer, 2000);//346534tk=46464
-
+// intervalId = setInterval(runTimer, 2000);//vraca neki Id 346534tk=46464
 
 
 
@@ -37,10 +36,13 @@
 let counter = 1;
 let intervalId;
 
-const brojac = () => {
-    console.log(counter);
-    counter++
-    clearInterval(intervalId);
+const tryIterval = () => {
+console.log(counter);
+counter++
+
+if(counter === 3){
+   clearInterval(intervalId);
+}
 }
 
-intervalId = setInterval(brojac, 2000);
+intervalId = setInterval(tryIterval, 2000);

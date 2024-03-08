@@ -67,6 +67,8 @@
 
 // console.log(typeNumbers(number1));
 
+const typeNumbers = (number) => { number > 0 ? "Positive" : "Negative"};
+console.log(typeNumbers(50));
 
 
 

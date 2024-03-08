@@ -228,44 +228,44 @@
 // ............................................ moj kod sa FLAG 
 
 
-let movies = ["Lord of the rings", "Harry Poter", "Joker", "Besa", "The Godfather"];
-let header = document.getElementById("result");
-let input = document.getElementById("searchInput");
-let button = document.getElementById("searchBtn");
+// let movies = ["Lord of the rings", "Harry Poter", "Joker", "Besa", "The Godfather"];
+// let header = document.getElementById("result");
+// let input = document.getElementById("searchInput");
+// let button = document.getElementById("searchBtn");
 
 
 
-function rentingApp(){
-     header.innerText="";
+// function rentingApp(){
+//      header.innerText="";
 
-    if(!input.value){
-        header.innerText = "You must enter a film";
-        header.style.color = "black";
-    } else {
-        let result = findMovie();
-        if(!result){
-            header.innerText = "The movie was not found";
-            header.style.color = "red";
-        } else {
-            header.innerText = "The movie can be rented";
-            header.style.color = "green";
-        }
+//     if(!input.value){
+//         header.innerText = "You must enter a film";
+//         header.style.color = "black";
+//     } else {
+//         let result = findMovie();
+//         if(!result){
+//             header.innerText = "The movie was not found";
+//             header.style.color = "red";
+//         } else {
+//             header.innerText = "The movie can be rented";
+//             header.style.color = "green";
+//         }
 
-    }
-    input.value = "";
-}
+//     }
+//     input.value = "";
+// }
 
-function findMovie(){
-    let flag = false;
-    for(movie of movies){
-    if(input.value.toLowerCase() === movie.toLowerCase()){
-        flag = true;
-        break;
-    }
-}
-return flag;
-}
-button.addEventListener("click", rentingApp);
+// function findMovie(){
+//     let flag = false;
+//     for(movie of movies){
+//     if(input.value.toLowerCase() === movie.toLowerCase()){
+//         flag = true;
+//         break;
+//     }
+// }
+// return flag;
+// }
+// button.addEventListener("click", rentingApp);
 
 
 

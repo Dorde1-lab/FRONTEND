@@ -228,7 +228,7 @@
 
 // const database = [];
 
-// const btnAdd = document.getElementById("btnAdd");
+// const btnAdd = document.getElementById("btn");
 // const firstNameInput = document.getElementById("firstName");
 // const lastNameInput = document.getElementById("lastName");
 // const ageInput = document.getElementById("age");
@@ -263,10 +263,10 @@
 //     database.push(newStudent);
 //     console.log("database", database);
 
-//     firstNameInput.value = "";
-//     lastNameInput.value = "";
-//     ageInput.value = "";
-//     emaiInput.value = "";
+//   //   firstNameInput.value = "";
+//   //   lastNameInput.value = "";
+//   //   ageInput.value = "";
+//   //   emaiInput.value = "";
 //   }
 // };
 
@@ -366,11 +366,11 @@ students.forEach(function (el) {
   console.log(el);
 });
 
-// let numbers = [1, 2, 3, 4, 5];
+let numbers = [1, 2, 3, 4, 5];
 
-// numbers.forEach(function(number, index) {
-//   console.log("Element na indeksu " + index + " je " + number);
-// });
+numbers.forEach(function(number, index) {
+  console.log("Element na indeksu " + index + " je " + number);
+});
 
 
 
