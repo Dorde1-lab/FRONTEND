@@ -12,6 +12,7 @@
 
 
 
+
 // //  - niz parnih brojeva deljivih sa 4 od 1 do 1000.
 
 
@@ -27,7 +28,7 @@
 
 
 
-// niz brojeva od 1 do 1000 koji se zavrsavaju cifrom 1.
+// // niz brojeva od 1 do 1000 koji se zavrsavaju cifrom 1.
 
 
 // let niz = [];
@@ -72,6 +73,10 @@
 // const lastNameInput = document.getElementById("lname");
 // const ageInput = document.getElementById("age");
 // const emailInput = document.getElementById("email");
+
+// let isFormValid = true;
+
+
 
 
 // btnAdd.onclick = function(){
@@ -122,7 +127,7 @@
 
 
 // ............................................
-
+// 
 
 
 
@@ -152,7 +157,7 @@
 
 // console.log(student.getFullName());
 
-// II way
+// // II way
 // const student = new Object();
 // student.firstName = "Niko";
 // student.lastName = "Niko";
@@ -220,7 +225,6 @@
 // }
 
 
-
 // .................................. Exercise
 
 
@@ -263,10 +267,10 @@
 //     database.push(newStudent);
 //     console.log("database", database);
 
-//   //   firstNameInput.value = "";
-//   //   lastNameInput.value = "";
-//   //   ageInput.value = "";
-//   //   emaiInput.value = "";
+//     firstNameInput.value = "";
+//     lastNameInput.value = "";
+//     ageInput.value = "";
+//     emaiInput.value = "";
 //   }
 // };
 
@@ -276,12 +280,12 @@
 
 
 // const numbers = [12, -2, 10];
-// delete numbers[1];// [12, undefined, 10]
+// // delete numbers[1];// [12, undefined, 10]
 
-// console.log("First element", numbers[0]);
-// console.log("Last element", numbers[2]);
-// console.log("Count of elements", numbers.length);
-// console.log("Last element", numbers[numbers.length-1]);
+// // console.log("First element", numbers[0]);
+// // console.log("Last element", numbers[2]);
+// // console.log("Count of elements", numbers.length);
+// // console.log("Last element", numbers[numbers.length-1]);
 
 // numbers.push(17);
 // console.log('array after push', numbers);
@@ -313,7 +317,7 @@
 // }
 
 
-// 5, 7 , 100, -49, 0
+// // 5, 7 , 100, -49, 0
 // let broj = 0; // undefined
 // do {
 //   broj = Number(prompt("Enter a number")); //9
@@ -374,7 +378,7 @@
 
 
 
-// .................................. Array references
+// // .................................. Array references
 
 
 
@@ -447,19 +451,19 @@
 //   });
 //   console.log(onlyStrings);
   
-  // onlyStrings = test.filter(function (element) {
-  //   return (typeof element === "string");
-  // });
+//   onlyStrings = test.filter(function (element) {
+//     return (typeof element === "string");
+//   });
   
-  // const onlyNumbers = [];
+//   const onlyNumbers = [];
   
-  // test.forEach(function (element) {
-  //   if (typeof element === "number") {
-  //     onlyNumbers.push(element);
-  //   }
-  // });
+//   test.forEach(function (element) {
+//     if (typeof element === "number") {
+//       onlyNumbers.push(element);
+//     }
+//   });
   
-  // console.log(onlyNumbers);
+//   console.log(onlyNumbers);
   
 //   const nonFalsyArray = [];
 //   test.forEach(function (element) {

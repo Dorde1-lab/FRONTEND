@@ -30,4 +30,3 @@
 
 // intervalId = setInterval(runTimer, 2000);//vraca neki Id 346534tk=46464
 
-

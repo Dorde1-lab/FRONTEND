@@ -1,4 +1,4 @@
-//  tri nacina pisanja funkcije arrow
+// //  tri nacina pisanja funkcije arrow
 
 
 // function validateEmail(email){
@@ -21,12 +21,6 @@
 
 
 
-
-
-
-
-
-
 // Vezbe :
 
 //  Da funkcija ispisuje broj cifara koje cine neki broj koji je ujedno parametar funkcije.
@@ -42,16 +36,12 @@
 
 
 
-
 // Da uzme broj iz parametra funkcije i da prikaze da li je even ili odd.
 
 
 
-// const numbers = (number) => {
-//    return number % 2 === 0 ? "even" : "odd";                    // ternarni prikaz uslova
-// }
+// const numbers = (number) => number % 2 === 0 ? "even" : "odd";                    // ternarni prikaz uslova
 // console.log(numbers(number1))
-
 
 
 
@@ -68,7 +58,7 @@
 // console.log(typeNumbers(number1));
 
 // ternarni prikaz iste funkcije
-// const typeNumbers = (number) => { number > 0 ? "Positive" : "Negative"};
+// const typeNumbers = (number) =>  number > 0 ? "Positive" : "Negative";
 // console.log(typeNumbers(50));
 
 
@@ -98,7 +88,6 @@
 // const button = document.getElementById("btn");
 // const header = document.getElementById("h1");
 
-
 // button.addEventListener("click", () => {
 //     const colorValue = inputColor.value;
 //     const sizeValue = inputSize.value;
@@ -106,18 +95,15 @@
 //     myFunction2(header, sizeValue);
 
 // })
-
 // const myFunction1 = (element, color) => {
 //     element.style.color = color;
 // }
-
 // const myFunction2 = (element, fontSize) => {
 //     if( fontSize === ""){
 //         element.style.fontSize = "24px";
 //     } else 
 //     {element.style.fontSize = fontSize + "px";;
-// }
-    
+// }  
 // }
 
 // drugi BOLJI nacin.....
@@ -172,24 +158,6 @@
 
 
 //  vezba 3
-
-//  arrow function 
-
-// const button = document.getElementById("btn");
-// const mainTable = document.getElementById("mainTable");
-
-// button.addEventListener("click", () => { 
-//     const url = "https://swapi.dev/api/planets/?page=1https://swapi.dev/api/planets/?page=1"
-//     starWars(url);
-// }) 
-
-//  const starWars = (url) => {
-//    fetch(url)
-//    .then(response => response.json())
-//    .then( data => {
-    
-//    })
-//  }
 
 
 // witout arrow

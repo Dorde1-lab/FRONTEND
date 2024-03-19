@@ -1,4 +1,4 @@
-//....................................  asynchronous functions
+// //....................................  asynchronous functions
 
 
 
@@ -101,8 +101,6 @@
 
 
 
-
-
 //.................................... example 1 - instagram
 
 
@@ -145,7 +143,7 @@
 //       console.error('Photo not added to instagram', error);
 //     });
 // }
- 
+
 // addPhotoToIG();
 
 
@@ -195,6 +193,7 @@
  
 // orderFood();
 
+
 // //  jednostavniji nacin da se uradi ova treca funkcija :
 
 // async function orderFood2() {
@@ -215,6 +214,48 @@
 
 
 
-//..................................................example 2 - food my try
+// //..................................................example 2 - food my try
 
 
+
+
+function getCountryByCode(code) {
+    return fetch(`https://restcountries.com/v2/alpha/${code}`).then((res) =>
+      res.json()
+    );
+  }
+  
+  function getBorderingCountries() {
+    return new Promise((resolve, reject) => {
+      getCountryByCode(country)
+        .then((response) => {
+          console.log(response);
+          resolve(response.borders);
+        })
+        .catch((error) => {
+          console.error("Fetching country failed", error);
+          reject("An error has ocurred");
+        });
+    });
+  }
+  
+  function renderCountries() {
+    getBorderingCountries()
+      .then((countries) => {
+        console.log("Bordering countries", countries);
+        countries.forEach((country) => {
+          getCountryByCode(country)
+            .then((response) => {
+              console.log(country, response.name);
+            })
+            .catch(() => {
+              console.error("Api failed...");
+            });
+        });
+      })
+      .catch(() => {
+        console.error("An error has ocurred...");
+      });
+  }
+  
+  renderCountries();

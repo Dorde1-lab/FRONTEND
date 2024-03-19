@@ -127,12 +127,6 @@
 // copyOfPrices.sort((a, b) => a - b);
 // console.log(copyOfPrices2);
 
-
-
-
-
-
-
 // ..................................
 
 
@@ -256,9 +250,3 @@
             
     })}
     students();
-
-
-
-  
-
-

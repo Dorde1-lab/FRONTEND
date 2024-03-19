@@ -1,44 +1,44 @@
 
 
-// fetch("https://raw.githubusercontent.com/sedc-codecademy/skwd9-04-ajs/main/Samples/students.json")
+fetch("https://raw.githubusercontent.com/sedc-codecademy/skwd9-04-ajs/main/Samples/students.json")
     
-//     .then(function(response){
-//         console.log("fetch - success");
-//         return response.json();
-//     })
-//     .then(function(jsResponse){
-//         console.log(jsResponse);
-//     })
+    .then(function(response){
+        console.log("fetch - success");
+        return response.json();
+    })
+    .then(function(jsResponse){
+        console.log(jsResponse);
+    })
 
-//     .catch(function(){
-//         console.error("fatch - error");
-//     })
-
-
+    .catch(function(){
+        console.error("fatch - error");
+    })
 
 
 
-// const astrosList = document.getElementById("astros");
 
-//     fetch("http://api.open-notify.org/astros.json")
-//        .then(function(response){
-//         return response.json();
-//        })
-//        .then(function(spaceData){
-//         console.log(spaceData);
-//         spaceData.people.forEach((astro) => {
-//             const li = document.createElement("li");
-//             li.innerText = astro.name;
-//             astrosList.appendChild(li);
-//         });
-//         })
-//         .catch(function(){
-//             console.error("Route has failed");
-//         });
+
+const astrosList = document.getElementById("astros");
+
+    fetch("http://api.open-notify.org/astros.json")
+       .then(function(response){
+        return response.json();
+       })
+       .then(function(spaceData){
+        console.log(spaceData);
+        spaceData.people.forEach((astro) => {
+            const li = document.createElement("li");
+            li.innerText = astro.name;
+            astrosList.appendChild(li);
+        });
+        })
+        .catch(function(){
+            console.error("Route has failed");
+        });
     
 
 
-
+    
 
 
 
@@ -77,7 +77,7 @@
 // vezba 2 - se nalazi na html 3
  
 
-//  prvi nacin:
+// //  prvi nacin:
 
 // const sendRequestiButton = document.getElementById("sendRequest");
 // const personNameHeading = document.getElementById("personNameHeading");
@@ -239,7 +239,7 @@
 //     table.appendChild(contentTr);
 
 //     document.body.appendChild(table);
-// }
+// // }
 
 
 
@@ -285,9 +285,8 @@ function generateTable (data) {
 
 
     const table = document.createElement("table");
+    const headingsTr = document.createElement("tr");
 
-
-    const headingsTr = document.createElement("tr");   
     //  ... da li sve atribute sa api a mozemo pretvoriti u niz??
 
     const headings = ["height", "weight", "Eye color", "Hair color"];
@@ -307,7 +306,7 @@ function generateTable (data) {
     const contentTr = document.createElement("tr");
 
     propertyNames.forEach(property => {
-        console.log(property, data[property]);
+        // console.log(property, data[property]);
 
         const cell = document.createElement("td");
         cell.innerText = data[property];
@@ -343,7 +342,7 @@ sendRequestiButton.addEventListener("click", onSendRequestClicked);
 
 
 
-//  3. zadatak
+// //  3. zadatak
 
 
 
