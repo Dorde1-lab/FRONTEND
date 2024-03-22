@@ -1,50 +1,53 @@
-// // [18:43] Courses Srbija
+// [18:43]  inheritance 
 
 
-// function Product(id, name, price) {
-//   this.id = Number(id) || 0;
-//   this.name = name || "---";
-//   this.price = Number(price) || 0;
+
+function Product(id, name, price) {
+  this.id = Number(id) || 0;
+  this.name = name || "---";
+  this.price = Number(price) || 0;
  
-//   this.displayDetails = () => {
-//     console.log(`Id: ${this.id}`);
-//     console.log(`Name: ${this.name}`);
-//     console.log(`Price: ${this.price} $`);
-//   };
-// }
+  this.displayDetails = () => {
+    console.log(`Id: ${this.id}`);
+    console.log(`Name: ${this.name}`);
+    console.log(`Price: ${this.price} $`);
+  };
+}
  
-// function ElectricalDevice(id, name, price, brand, model) {
-//   Object.setPrototypeOf(this, new Product(id, name, price));
-//   this.brand = brand || "---";
-//   this.model = model || "---";
+function ElectricalDevice(id, name, price, brand, model) {
+  Object.setPrototypeOf(this, new Product(id, name, price));
+  this.brand = brand || "---";
+  this.model = model || "---";
  
-//   this.displayDetails = () => {
-//     Object.getPrototypeOf(this).displayDetails();
-//     console.log(`Brand: ${this.brand}`);
-//     console.log(`Model: ${this.model}`);
-//   };
-// }
+  this.displayDetails = () => {
+    Object.getPrototypeOf(this).displayDetails();
+    console.log(`Brand: ${this.brand}`);
+    console.log(`Model: ${this.model}`);
+  };
+}
  
-// function Laptop(id, name, price, brand, model, processor, isTouchScreen) {
-//   Object.setPrototypeOf(
-//     this,
-//     new ElectricalDevice(id, name, price, brand, model)
-//   );
+function Laptop(id, name, price, brand, model, processor, isTouchScreen) {
+  Object.setPrototypeOf(
+    this,
+    new ElectricalDevice(id, name, price, brand, model)
+  );
  
-//   this.processor = processor || "---";
-//   this.isTouchScreen = isTouchScreen || false;
+  this.processor = processor || "---";
+  this.isTouchScreen = isTouchScreen || false;
  
-//   this.info = () => {
-//     Object.getPrototypeOf(this).displayDetails();
-//     console.log(`Processor: ${processor}`);
-//     console.log(isTouchScreen ? "Touch screen" : "Regular screen");
-//   };
-// }
+  this.info = () => {
+    Object.getPrototypeOf(this).displayDetails();
+    console.log(`Processor: ${processor}`);
+    console.log(isTouchScreen ? "Touch screen" : "Regular screen");
+  };
+}
  
+
+
+
  
 // function Clothes(id, name, price, size, material) {
 //   Object.setPrototypeOf(this, new Product(id, name, price));
- 
 //   this.size = size || "---";
 //   this.material = material || "---";
  
@@ -79,6 +82,10 @@
 // const laptop = new Laptop(4,"Laptop",1700,"HP","Notebook - 15-ac650tu","Intel Core i5",true);
 // console.log(laptop.name);
 // laptop.info();
+
+
+
+
 
 
 function person(firstName, lastName, age) {

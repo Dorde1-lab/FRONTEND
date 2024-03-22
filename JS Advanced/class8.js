@@ -111,6 +111,11 @@
 //   age: 2,
 //   owner: "Ana",
 // };
+// function novaFunkcija (dog) {
+//     const {owner} = dog;
+// }
+// novaFunkcija(dog2)
+
 
 // const { name, color } = myDog;
 
@@ -118,7 +123,7 @@
 // // console.log(`Dog ${name} has ${color} color.`);
 
 // function displayOwner({ owner = "NO OWNER" }) {        // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-//   // const { owner = 'NO OWNER' } = dog;
+//   const { owner = 'NO OWNER' } = dog;
 //   console.log(`Owner is ${owner}`);
 // }
 // displayOwner(dog2);
@@ -183,7 +188,7 @@
 
 
 
-// //........................ EXAMPLE IMPORTANT    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+// //........................  IMPORTANT EXAMPLE   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 
 function Car(brand, model, year, price) {
@@ -253,3 +258,97 @@ function Car(brand, model, year, price) {
   car2.displayDetails();
   
   // 2 456.45
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  const obj = {
+  name: "Aida",
+};
+
+// ..........................................object.create        -      kopiranje objekta(stvaranje novog)
+
+// const copy = { ...obj };
+const copy = Object.create(obj);
+copy.name = "Almir";
+
+
+
+// ......................................Object.assign    -     spajanje dva objekta, ali tada svi objekti dobijaju i propertije drugo objekta. da se to izmeni, stavlja se {} !!!!!!!!!!!!
+
+const studentBasicInfo = {
+  firstName: "John",
+  lastName: "Doe",
+  age: 23,
+};
+
+const studentAdditionalInfo = {
+  address: "Other Adress",
+  street: "Other Street",
+  streetNumber: 12,
+  mobile: "111 111 111",
+};
+
+const student = Object.assign({}, studentBasicInfo, studentAdditionalInfo);
+
+
+
+
+
+//...................................... Object.keys            -     vraca niz naziva atributa 
+// ......................................Object.values          -     vraca vrednost tih atributa
+// ......................................Object.entries         -     vraca kombinaciju, niz koji sadrzi i atribut i njegovu vrednost.
+
+
+
+console.log(Object.keys(student)); ``
+console.log(Object.values(student));
+console.log(Object.entries(student));
+
+
+
+
+
+
+
+
+// .......................................................!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+function mojaFunkcija() {
+  return new Promise((resolve, reject) => {
+    reject("Neka error poruka");                              // Asinhrona funkcija ima reject za error. 
+  });
+}
+
+mojaFunkcija().catch((err) => {
+  console.log(err);
+});
+
+function mojaFunkcija2() {
+  throw new Error("Ovo je novi error");            // Sinhrona funkcija nema reject pa se error moze hendlovati na ovaj nacin i try, catch blok.
+  console.log(student.firstName);
+}
+
+// mojaFunkcija2();
+
+try {                                             // Sinhrona funkcija nema reject pa se error moze hendlovati na ovaj nacin i try, catch blok.
+  mojaFunkcija2(); 
+} catch (error) {
+  console.log("Ovo ne radi !!!");
+}
+
+console.log('ovo opet se izvrsava');
+  
