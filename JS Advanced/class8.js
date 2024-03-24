@@ -29,7 +29,7 @@
 //     console.log(average);
     
 //  };
-//   object () 
+//   object() 
 
 
 
@@ -207,14 +207,14 @@ function Car(brand, model, year, price) {
     this.displayOwners = function() {
       if(this.owners.length) {
         console.log('Owners: ');
-        this.owners.forEach(({fullName}) => {
+        this.owners.forEach(({fullName}) => {          // zasto je ovde fullName u ovim zagradama {}
           console.log(fullName);
         });
       } else {
         console.log("This car is brand new - no previous owners.");
       }
     }
-  
+
     this.displayDetails = function () {
       console.log(`${this.brand} ${this.model}`);
       console.log(`Year: ${this.year}`);
@@ -287,7 +287,7 @@ copy.name = "Almir";
 
 
 
-// ......................................Object.assign    -     spajanje dva objekta, ali tada svi objekti dobijaju i propertije drugo objekta. da se to izmeni, stavlja se {} !!!!!!!!!!!!
+// ......................................Object.assign    -     spajanje dva objekta, ali tada svi objekti dobijaju i propertije drugo objekta. da se to spreci, stavlja se {} !!!!!!!!!!!!
 
 const studentBasicInfo = {
   firstName: "John",
@@ -326,6 +326,7 @@ console.log(Object.entries(student));
 
 
 // .......................................................!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
 
 function mojaFunkcija() {
   return new Promise((resolve, reject) => {
