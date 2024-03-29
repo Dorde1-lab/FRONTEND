@@ -3,6 +3,7 @@ const statisticInfo = document.getElementById("statisticsResult");
 
 
 const temperature = (data) => {
+    statisticInfo.innerText = "";
     const maxDiv = document.createElement("div");
     data.list.sort((a, b) => b.main.temp_max - a.main.temp_max);
     const maxTemp = data.list[0];
@@ -24,6 +25,7 @@ const temperature = (data) => {
 } 
 
 const humidity = (data) => {
+    statisticInfo.innerText = "";
     const maxHumidityDiv = document.createElement("div");
     const maxHumidity = data.list.map((element) => element.main.humidity)
     .sort((a, b) => b - a);
@@ -48,6 +50,7 @@ const humidity = (data) => {
 
 
 const time = (data) => {
+    statisticInfo.innerText = "";
     const warmestDiv = document.createElement("div");
     let warmestTemp = Number.NEGATIVE_INFINITY;
     let warmestTime = "";

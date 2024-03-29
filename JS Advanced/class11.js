@@ -1,34 +1,37 @@
 // // ....................       classes inheritance 
 
 
-// class Product {
-//   constructor(id, name, price) {
-//     this.id = Number(id) || 0;
-//     this.name = name || "---";
-//     this.price = Number(price) || 0;
-//   }
+class Product {
+  constructor(id, name, price) {
+    this.id = Number(id) || 0;
+    this.name = name || "---";
+    this.price = Number(price) || 0;
+  }
  
-//   displayDetails() {
-//     console.log(`Id: ${this.id}`);
-//     console.log(`Name: ${this.name}`);
-//     console.log(`Price: ${this.price} EUR`);
-//   }
-// }
+  displayDetails() {
+    console.log(`Id: ${this.id}`);
+    console.log(`Name: ${this.name}`);
+    console.log(`Price: ${this.price} EUR`);
+  }
+}
  
-// class ElectricalDevice extends Product {
-//   constructor(id, name, price, brand, model) {
-//     super(id, name, price);
+class ElectricalDevice extends Product {
+  constructor(id, name, price, brand, model) {
+    super(id, name, price);
  
-//     this.brand = brand || "---";
-//     this.model = model || "---";
-//   }
+    this.brand = brand || "---";
+    this.model = model || "---";
+  }
  
-//   displayDetails() {
-//     super.displayDetails();
-//     console.log(`Brand: ${this.brand}`);
-//     console.log(`Model: ${this.model}`);
-//   }
-// }
+  displayDetails() {
+    super.displayDetails();
+    console.log(`Brand: ${this.brand}`);
+    console.log(`Model: ${this.model}`);
+  }
+}
+
+
+
 // // ................................................................
 
 // console.log("PRODUCT:");
@@ -64,10 +67,10 @@
 //         this.size = size;
 //         this.isEaten = false;
 //         }
-// //         eat(checkAnimal) {
-// //             if(checkAnimal instanceof Animal && this.type === "herbivore "){
-// //                 console.log(`The animal ${this.name} is a herbivore and does not eat other animals`)
-// //             } else if (checkAnimal instanceof Animal && this.type !== "herbivore") {
+//         eat(checkAnimal) {
+//             if(checkAnimal instanceof Animal && this.type === "herbivore "){
+//                 console.log(`The animal ${this.name} is a herbivore and does not eat other animals`)
+//             } else if (checkAnimal instanceof Animal && this.type !== "herbivore") {
 //                 this.isEaten = true;
 //                 console.log(`The animal ${this.name} ate the ${checkAnimal.name}.`)
 //             } else if (Math.pow(checkAnimal, 2) > this.size){
@@ -300,62 +303,62 @@ class Person {
 //   SET    and    GET .....................
 
 
-  // class Clothes extends Product {
-  //   constructor(id, name, price, size, material) {
-  //     super(id, name, price);
-  //     this.size = size || "S";
-  //     this.material = material || "---";
-  //   }
+  class Clothes extends Product {
+    constructor(id, name, price, size, material) {
+      super(id, name, price);
+      this.size = size || "S";
+      this.material = material || "---";
+    }
   
-  //   set size(newSize) {
-  //     const uppercasedSize = newSize.toUpperCase(); //s => S
-  //     const validSizes = ["XXS", "XS", "S", "M", "L", "XL", "XXL"];
+    set size(newSize) {
+      const uppercasedSize = newSize.toUpperCase(); //s => S
+      const validSizes = ["XXS", "XS", "S", "M", "L", "XL", "XXL"];
   
-  //     if (validSizes.includes(uppercasedSize)) {
-  //       this._size = uppercasedSize;
-  //     } else {
-  //       console.error("Size is not valid!");
-  //       this._size = "S";
-  //     }
-  //   }
+      if (validSizes.includes(uppercasedSize)) {
+        this._size = uppercasedSize;
+      } else {
+        console.error("Size is not valid!");
+        this._size = "S";
+      }
+    }
   
-  //   get size() {
-  //     return this._size.toUpperCase();
-  //   }
-  // }
+    get size() {
+      return this._size.toUpperCase();
+    }
+  }
   
 
 
   // .................................. the same 
 
 
-  // class Person {
-  //   constructor(id, name, gender, age) {
-  //     this.id = Number(id) || 0;
-  //     this.name = name || "---";
-  //     this.lastName = lastName || "---";
-  //     this.firstName = firstName || "---";
-  //     this.gender = gender.toLowerCase() || "---";
-  //     this.age = Number(age) || 0;
-  //   }
+  class Person {
+    constructor(id, name, gender, age) {
+      this.id = Number(id) || 0;
+      this.name = name || "---";
+      this.lastName = lastName || "---";
+      this.firstName = firstName || "---";
+      this.gender = gender.toLowerCase() || "---";
+      this.age = Number(age) || 0;
+    }
   
-  //   set name(personName) {
-  //     if (!personName || personName.length < 2 || !isNaN(personName)) {
-  //       console.error(
-  //         "Person name is not valid. It needs to have at least 3 characters. And cannot be number."
-  //       );
-  //     } else {
-  //       this._name = personName;
-  //     }
-  //   }
+    set name(personName) {
+      if (!personName || personName.length < 2 || !isNaN(personName)) {
+        console.error(
+          "Person name is not valid. It needs to have at least 3 characters. And cannot be number."
+        );
+      } else {
+        this._name = personName;
+      }
+    }
   
-  //   get name() {
-  //     return `The name is ${this._name}`;
-  //   }
+    get name() {
+      return `The name is ${this._name}`;
+    }
   
-  //   displayDetails() {
-  //     console.log(`Id: ${this.id}`);
-  //     console.log(`Name: ${this.name}`);
-  //     console.log(`Gender: ${this.gender}`);
-  //     console.log(`Age: ${this.age}`);
-  //   }}
+    displayDetails() {
+      console.log(`Id: ${this.id}`);
+      console.log(`Name: ${this.name}`);
+      console.log(`Gender: ${this.gender}`);
+      console.log(`Age: ${this.age}`);
+    }}

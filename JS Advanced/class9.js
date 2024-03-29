@@ -308,7 +308,7 @@ const getFact = () => {
 
 btn.addEventListener("click", () => {
   getFact()
-    .then((fact) => {// 'Neki text'
+    .then((fact) => {// 'Neki text' - ovaj fact hvatamo iz resolve u funkciji getFact
       fetchImage()
         .then((imageObject) => {
           const { url } = imageObject;

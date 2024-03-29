@@ -207,7 +207,7 @@ function Car(brand, model, year, price) {
     this.displayOwners = function() {
       if(this.owners.length) {
         console.log('Owners: ');
-        this.owners.forEach(({fullName}) => {          // zasto je ovde fullName u ovim zagradama {}
+        this.owners.forEach(({fullName}) => {          // iz svakog objekta uzima fullname
           console.log(fullName);
         });
       } else {

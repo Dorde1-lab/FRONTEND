@@ -2,27 +2,27 @@
 
 
 
-// class Animal {
-//     constructor(name, gender, age) {
-//         this.id = Math.floor(Math.random());
-//         this.name = name;
-//         this.gender = gender;
-//         this.age = Number(age);
-//     }
-// }
+class Animal {
+    constructor(name, gender, age) {
+        this.id = Math.floor(Math.random());
+        this.name = name;
+        this.gender = gender;
+        this.age = Number(age);
+    }
+}
 
 
-// const animals = [
-//     new Animal("Kitty", "female", 2),
-//     new Animal("Rex", "male", 3),
-//     new Animal("Bobby", "male", 4),
-//     new Animal("Micka", "female", 1),
-//   ];
+const animals = [
+    new Animal("Kitty", "female", 2),
+    new Animal("Rex", "male", 3),
+    new Animal("Bobby", "male", 4),
+    new Animal("Micka", "female", 1),
+  ];
 
-//   import {getYoungestAnimal, getFemaleAnimals, getMaleAnimals} from "./animalsService.js"
-//   console.log(getYoungestAnimal(animals));
-//   console.log(getFemaleAnimals(animals));
-//   console.log(getMaleAnimals(animals));
+  import {getYoungestAnimal, getFemaleAnimals, getMaleAnimals} from "./animalsService.js"
+  console.log(getYoungestAnimal(animals));
+  console.log(getFemaleAnimals(animals));
+  console.log(getMaleAnimals(animals));
 
 
 

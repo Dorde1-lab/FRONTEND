@@ -17,6 +17,8 @@ function Academy(name, students, subjects, start, end) {
     }
 }
 
+const academyObject =  new Academy("SEDC", ["Marija", "Ivana", "Nina"], ["math", "lang", "biology"], "10.10.2023", "10.10.2024")
+
 function Subject(title, isElective, academy, students) {
     this.title = title;
     this.numberOfClasses = 10;
@@ -32,6 +34,9 @@ function Subject(title, isElective, academy, students) {
     }
 }
 
+const subjectObject = new Subject("Math", true, academyObject, ["Marija", "Ivana", "Nina"])
+ 
+
 function Student(firstName, lastName, age){
     this.firstName = firstName;
     this.lastName = lastName;
@@ -39,10 +44,12 @@ function Student(firstName, lastName, age){
     this.completedSubjects = [];
     this.academy = null; 
     this.currentSubject = null; 
-    this.startAcademy = function(academy) {
-        this.academy = academy;
+    this.startAcademy = function(academyObject) {
+        this.academy = academyObject;
     } 
-    this.startSubject = function(subject) {
-        this.currentSubject = subject;
+    this.startSubject = function(subjectObject) {
+        if(this.academy === subjectObject.academy && this.subjects){
+            currentSubject = subjectObject
+        }
     }
 }
