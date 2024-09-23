@@ -277,19 +277,74 @@
 <input type="url" id="homepage" name="homepage">
 
 
+<!-- select ... moze se dodati atribut size (koliko se opcija prikazuje) -->
+<!--  ili atribut    (multiple)   -->
+<label for="cars">Izaberi auto</label>
+<select id="cars" name="cars" required size="2">
+    <option value="volvo">Volvo</option>
+    <option value="peugeot">Peugeot</option>
+    <option value="renault">Renault</option>
+</select>
+
+
+<!-- textarea -->
+
+<textarea name="message" rows="10" cols="30">
+    The cat was playing in the garden.
+</textarea>
+
+<!-- fieldset -->
+
+<fieldset>
+    <legend>Personalia:</legend>
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname" value="John"><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname" value="Doe"><br><br>
+    <input type="submit" value="Submit">
+  </fieldset>
+
+
+  <!-- output !!! -->
+
+
+  <form action="/action_page.php"
+  oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+  0
+  <input type="range"  id="a" name="a" value="50">
+  100 +
+  <input type="number" id="b" name="b" value="50">
+  =
+  <output name="x" for="a b"></output>
+  <br><br>
+  <input type="submit">
+</form>
+
+
+<!-- patern  ... u ovom slucaju, samo 3 slova se mogu upisati-->
+
+<input type="text" id="country_code" name="country_code"
+        pattern="[A-Za-z]{3}" title="Three letter country code">
+
+
+<!-- step -->
+
+<input type="number" id="points" name="points" step="3">
+
+
+<!-- height, width -->
+
+<input type="image" src="img_submit.gif" alt="Submit" width="48" height="48">
 
 
 
+<!-- Submit -->
+<input type="submit" value="Zavrsi formu">
+
+<!-- Reset -->
+<input type="reset" value="Resetuuuuuuuuuhj">
 
 
-
-
-
-     <!-- Submit -->
-     <input type="submit" value="Zavrsi formu">
-
-     <!-- Reset -->
-      <input type="reset" value="Resetuuuuuuuuuhj">
 </form>
 
 
