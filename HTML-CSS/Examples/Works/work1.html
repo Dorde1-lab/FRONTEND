@@ -32,6 +32,22 @@
     }
 }
 
+
+#div1 {
+  width: 350px;
+  height: 70px;
+  padding: 10px;
+  border: 1px solid #aaaaaa;
+}
+
+#drag1 {
+    width: 336px;
+     height: 69px;
+}
+
+
+
+
 </style>
 
 </head>
@@ -356,12 +372,12 @@
 
 
 
+<form action="/action_page.php" novalidate>
+    <input type="submit" formaction="/action_page2.php" value="Submit as Admin" formnovalidate>
+</form>
 
 
-
-
-
-
+<iframe width="420" src="https://www.youtube.com/embed/tgbNymZ7vqY?controls=1"></iframe>
 
 <a href="mailto:jon@example.org">Email Jon</a>
 
@@ -373,6 +389,91 @@
   </table>
 
 
+
+
+<button onclick="getLocation()">Try It</button>
+<p id="demo"></p>
+
+<script>
+const x = document.getElementById("demo");
+
+function showPosition(postion){
+    x.innerHTML = "Lokacija je sledeca :" + postion.coords.latitude + "<br>"
+                                          + postion.coords.longitude;                                        
+}
+
+function showError(error){
+    switch(error.code){
+        case error.PERMISSION_DENIED:
+            x.innerHTML = "Denied"
+        case error.POSITION_UNAVAILABLE:
+            x.innerHTML = "Unavailable"
+            case error.TIMEOUT:
+                x.innerHTML = "Timeout"
+            case error.UNKNOWN_ERROR:
+                x.innerHTML = "Unknown error"
+                break;
+    }
+}
+
+
+function getLocation() {
+    if(navigator.geolocation){
+        navigator.geolocation.getCurrentPosition(showPosition, showError);
+    } else {
+        x.innerHTML = "Location is not supported"
+    }
+}
+  </script>
+
+
+
+
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<br>
+<img id="drag1" src="icon.png" draggable="true" ondragstart="drag(event)">
+
+
+<script>
+
+    function drag(ev){
+        ev.dataTransfer.setData("text", ev.target.id)
+    }
+
+    function drop(ev){
+        ev.preventDefault();
+        var data = ev.dataTransfer.getData("text");
+        ev.target.appendChild(document.getElementById(data));
+    }
+
+    function allowDrop(ev){
+        ev.preventDefault();
+    }
+
+</script>
+
+
+
+
+
+<marquee behavior="scroll"
+         direction="up" 
+         scrollamount="3"
+         loop="-1"  
+         hspace="5"  
+         vspace="5">
+        - This text scrolls from left to right.
+         </marquee>
+
+<!-- Dijagonalno = mora se uraditi nasted marquee -->
+<marquee behavior="scroll" direction="right"><marquee style="width:80px; height:100px;" behavior="scroll" direction="up">Text scrolling Diagonally</marquee></marquee>
+
+<!-- Bouncing back and forth -->
+<marquee behavior="alternate" scrollamount = "15">Bouncing text</marquee>
+
+
+
+<marquee class = "ten"  scrollamount="10" direction="down"> Ten</marquee>
 
 </body>
 </html>
