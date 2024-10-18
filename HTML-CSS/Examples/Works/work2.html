@@ -5,7 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+    <link type="image/x-icon" rel="icon" href="anthurium-sch.jpg">
+
 <style>
+
+    * {
+        color: rgb(128, 2, 2);
+
+    }
 
     h1 {
         color: antiquewhite;
@@ -13,9 +20,74 @@
     #paragraph{
         font-size: larger;
     }
+    .aside {
+        float: right;
+        width: 30%;
+        background-color: aqua;
+        padding: 30px;
+    }
+    /* p.fake{            -- to je bio treci P, kada mu se doda aside fake klasa !
+        font-style: italic;
+        background-color: blue;
+    } */
+
+    aside p {        /* targetira sve P elemente u aside elementu */
+        font-size: 10px;
+        text-align: justify;
+    }
+
+    li > a {       /* targetira sve A elemente u li elementu - moze bez znaka > */ 
+        font-size: 10px;   
+    }
+    h1 p {       /* targetira prvi p element nakon svakog h1 elementa */
+        background-color: antiquewhite;
+    }
+
+    p {
+       color: red !important;
+       /* border-style: dotted solid groove dashed; */
+       /* letter-spacing: 5px; */
+       /* word-spacing: 10px;
+       line-height: normal;
+       text-transform: capitalize; */
+
+       /* text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue; */
+    
+
+    }
+
+    @font-face {
+    font-family: 'Noto Sans KR';
+    src: url(fonts/NotoSans/Sixtyfour_Convergence/SixtyfourConvergence-Regular-VariableFont_BLED\,SCAN\,XELA\,YELA.ttf), format('ttf');
+}
+    body {
+        background-image: url(anthurium-sch.jpg);
+        background-repeat: no-repeat;
+        background-position: right top;
+        /* background-position: 50% 50%;      sa strana */
+        /* background-position: 50px 150px;  sa leve strane i 150 px od vrha  */
+        /* background-size: 10px 10px; width: 30px; height: 30px; */
+        /* background-attachment: scroll; */
+
+        /* background: red      /* Shorthand */
+                    /* url(anthurium-sch.jpg) */
+                    /* no-repeat */
+                    /* scroll */
+                    /* center          */
+        /*  */
+
+
+        /* font-family: 'Times New Roman', Times, serif; */
+     font-family: 'Noto Sans KR';
+      
+    }
+
+
+
 
 </style>
 
+<link rel="stylesheet" href="work2.css">     <!-- external CSS -->
 </head>
 <body>
     
@@ -25,11 +97,36 @@
 
 <p id="paragraph">My family and I visited The Epcot center this summer. The weather was nice, and Epcot was amazing! I had a great summer together with my family!</p>
 
-<aside>
-<p>The Epcot center is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+<aside class="aside"> 
+<p>The Epcot center is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.
+    The Epcot center is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.
+    The Epcot center is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.
+    The Epcot center is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.
+
+</p>
 </aside>
 
-<p>  I had a great summer together with my family!</p>
+<p>  I had a great summer together with my family!
+    The Epcot center is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.
+    The Epcot center is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.
+    The Epcot center is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.
+    The Epcot center is a theme park at Walt Disney World Resort. 
+    I had a great summer together with my family!
+    The Epcot center is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.
+    The Epcot center is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.
+    The Epcot center is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.
+    The Epcot center is a theme park at Walt Disney World Resort.
+    I had a great summer together with my family!
+    The Epcot center is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.
+    The Epcot center is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.
+    The Epcot center is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.
+    The Epcot center is a theme park at Walt Disney World Resort.
+    I had a great summer together with my family!
+    The Epcot center is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.
+    The Epcot center is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.
+    The Epcot center is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.
+    The Epcot center is a theme park at Walt Disney World Resort.
+</p>
 
 
 
