@@ -9,77 +9,27 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">    
     
     
-    <style>
-    * {
-        color: rgb(128, 2, 2);
-
-    }
-
-    h1 {
-        color: antiquewhite;
-    }
-    #paragraph{
-        font-size: larger;
-    }
-    .aside {
-        float: right;
-        width: 30%;
-        background-color: aqua;
-        padding: 30px;
-    }
-    /* p.fake{            -- to je bio treci P, kada mu se doda aside fake klasa !
-        font-style: italic;
-        background-color: blue;
-    } */
-
-    aside p {        /* targetira sve P elemente u aside elementu */
-        font-size: 10px;
-        text-align: justify;
-    }
-
-    li > a {       /* targetira sve A elemente u li elementu - moze bez znaka > */ 
-        font-size: 10px;   
-    }
-    h1 p {       /* targetira prvi p element nakon svakog h1 elementa */
-        background-color: antiquewhite;
-    }
-
-    p {
-       color: red !important;
-       /* border-style: dotted solid groove dashed; */
-       /* letter-spacing: 5px; */
-       /* word-spacing: 10px;
-       line-height: normal;
-       text-transform: capitalize; */
-
-       /* text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue; */
-    
-
-    }
-
-    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif+Oriya:wght@400..700&display=swap');
-
-    body {
-        background-image: url(anthurium-sch.jpg);
-        background-repeat: no-repeat;
-        background-position: right top;
-        /* background-position: 50% 50%;      sa strana */
-        /* background-position: 50px 150px;  sa leve strane i 150 px od vrha  */
-        /* background-size: 10px 10px; width: 30px; height: 30px; */
-        /* background-attachment: scroll; */
-
-        /* background: red      /* Shorthand */
-                    /* url(anthurium-sch.jpg) */
-                    /* no-repeat */
-                    /* scroll */
-                    /* center          */
-        /*  */
-
-
-        /* font-family: 'Times New Roman', Times, serif; */
-        font-family: "Montserrat", sans-serif;
-      
-    }
+<style>
+   
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+.content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    z-index: 1;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.dropdown:hover .content{
+    display: block;
+}
+.desc{
+    text-align: center;
+    padding: 15px;
+}
 
 
 
@@ -88,57 +38,13 @@
 <link rel="stylesheet" href="work2.css">     <!-- external CSS -->
 </head>
 <body>
-    
- 
-
-<h1>The aside element - Styled with CSS</h1>
-
-<p id="paragraph">My family and I visited The Epcot center this summer. The weather was nice, and Epcot was amazing! I had a great summer together with my family!</p>
-
-<aside class="aside"> 
-<p>The Epcot center is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.
-    The Epcot center is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.
-    The Epcot center is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.
-    The Epcot center is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.
-
-</p>
-</aside>
-
-<p>  I had a great summer together with my family!
-    The Epcot center is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.
-    The Epcot center is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.
-    The Epcot center is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.
-    The Epcot center is a theme park at Walt Disney World Resort. 
-    I had a great summer together with my family!
-    The Epcot center is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.
-    The Epcot center is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.
-    The Epcot center is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.
-    The Epcot center is a theme park at Walt Disney World Resort.
-    I had a great summer together with my family!
-    The Epcot center is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.
-    The Epcot center is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.
-    The Epcot center is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.
-    The Epcot center is a theme park at Walt Disney World Resort.
-    I had a great summer together with my family!
-    The Epcot center is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.
-    The Epcot center is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.
-    The Epcot center is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.
-    The Epcot center is a theme park at Walt Disney World Resort.
-   </p>
-
-   <p style="display: inline;">Djordje ikona</p>
-  
-   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-
-
-
-<div style="overflow-x:auto;">
-
-    <table>table content</table>
-    
+<div class="dropdown">
+    <img src="icon.png" alt="error" width="100" height="50">
+    <div class="content">
+        <img src="anthurium-sch.jpg" alt="error" width="300" height="200">
+        <div class="desc">Beautiful Cinque Terre</div>
+    </div>
 </div>
-
 
 
 
