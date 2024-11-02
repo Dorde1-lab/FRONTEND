@@ -11,40 +11,74 @@
     
 <style>
    
-   div.gallery {
-    margin:  5px;
-    border:  1px solid #ccc;
-    float: left;
-    width: 180px;
-   }
-   div.gallery:hover{
-    border: 1px solid #777;
-   }
-   div.gallery img {
-    height: auto;
-    width: 100%;
-   }
-   div.desc {
-    padding: 15px;
-    text-align: center;
-   }
 
 
+   body {
+    counter-reset: section;
+}
+h1 {
+    counter-reset: subsection;
+}
+
+h1::before {
+  counter-increment: section;
+  content: "Section " counter(section) ". ";
+}
+
+ h2::before{
+    counter-increment: subsection;
+    content: counter(section) "." counter(subsection) " ";
+} 
 </style>
 
-<link rel="stylesheet" href="work2.css">     <!-- external CSS -->
 </head>
 <body>
 
-<div class="gallery">
-    <a target="_blank" href="anthurium-sch.jpg">
-        <img src="anthurium-sch.jpg" alt="error" width="600" height="400">
-    </a>
-    <div class="desc"> Add description here</div>
 
-</div>
+    <h1>HTML/CSS Tutorials</h1>
+    <h2>HTML</h2>
+    <h2>CSS</h2>
+    <h2>Bootstrap</h2>
+    <h2>W3.CSS</h2>
+    
+    <h1>Scripting Tutorials</h1>
+    <h2>JavaScript</h2>
+    <h2>jQuery</h2>
+    <h2>React</h2>
+    
+    <h1>Programming Tutorials</h1>
+    <h2>Python</h2>
+    <h2>Java</h2>
+    <h2>C++</h2>
 
+
+
+<picture>
+    <source media="min-width:300px" srcset="anthurium-sch">
+
+</picture>
+
+
+
+
+
+
+
+  <input type="radio" id="ime" name="ime" value="ime" checked>
+    <label for="ime"> Ime </label><br>
+    <input type="radio" id="prezime" name="ime" value="prezime">
+<label for="prezime">Prezime</label>
+
+
+
+<input type="image" src="img_submit.gif" alt="Submit" width="48" height="48">
 
 
 </body>
 </html>
+
+
+
+
+
+
