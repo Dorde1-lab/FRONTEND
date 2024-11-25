@@ -12,71 +12,36 @@
 <style>
    
 
-
-   body {
-    counter-reset: section;
+ @keyframes example{
+    from{background-color: aquamarine; width: 100px;}
+    to{background-color: blue; width: 200px;}
 }
-h1 {
-    counter-reset: subsection;
+div {
+  width: 100px;
+  height: 100px;
+  background-color: aquamarine;
+  animation-name: example;
+  animation-duration: 4s;
 }
 
-h1::before {
-  counter-increment: section;
-  content: "Section " counter(section) ". ";
-}
-
- h2::before{
-    counter-increment: subsection;
-    content: counter(section) "." counter(subsection) " ";
-} 
 </style>
+
+
+
 
 </head>
 <body>
 
 
-    <h1>HTML/CSS Tutorials</h1>
-    <h2>HTML</h2>
-    <h2>CSS</h2>
-    <h2>Bootstrap</h2>
-    <h2>W3.CSS</h2>
+    <h1>CSS Animation</h1>
+
+    <div></div>
     
-    <h1>Scripting Tutorials</h1>
-    <h2>JavaScript</h2>
-    <h2>jQuery</h2>
-    <h2>React</h2>
-    
-    <h1>Programming Tutorials</h1>
-    <h2>Python</h2>
-    <h2>Java</h2>
-    <h2>C++</h2>
-
-
-
-<picture>
-    <source media="min-width:300px" srcset="anthurium-sch">
-
-</picture>
-
-
-
-
-
-
-
-  <input type="radio" id="ime" name="ime" value="ime" checked>
-    <label for="ime"> Ime </label><br>
-    <input type="radio" id="prezime" name="ime" value="prezime">
-<label for="prezime">Prezime</label>
-
-
-
-<input type="image" src="img_submit.gif" alt="Submit" width="48" height="48">
+    <p><b>Note:</b> When an animation is finished, it goes back to its original style.</p>
 
 
 </body>
 </html>
-
 
 
 
